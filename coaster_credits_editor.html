@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coaster Credits Editor</title>
+  <style>
+    :root {
+      --bg: #f4efe6;
+      --panel: rgba(255, 252, 247, 0.94);
+      --panel-strong: #fffaf2;
+      --ink: #1c1a17;
+      --muted: #6b6256;
+      --accent: #156f6a;
+      --accent-2: #d6672d;
+      --line: rgba(28, 26, 23, 0.12);
+      --shadow: 0 14px 40px rgba(44, 32, 19, 0.12);
+      --radius: 22px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Segoe UI", "Aptos", sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at top left, rgba(214, 103, 45, 0.16), transparent 28%),
+        radial-gradient(circle at top right, rgba(21, 111, 106, 0.14), transparent 24%),
+        linear-gradient(180deg, #f9f5ed 0%, var(--bg) 100%);
+      min-height: 100vh;
+    }
+
+    .shell {
+      width: min(1400px, calc(100vw - 32px));
+      margin: 24px auto 40px;
+    }
+
+    .hero,
+    .toolbar,
+    .summary,
+    .cards {
+      background: var(--panel);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.65);
+      box-shadow: var(--shadow);
+      border-radius: var(--radius);
+    }
+
+    .hero {
+      padding: 28px;
+      display: grid;
+      gap: 14px;
+      margin-bottom: 18px;
+    }
+
+    .hero h1 {
+      margin: 0;
+      font-size: clamp(2rem, 4vw, 3.25rem);
+      line-height: 0.98;
+      letter-spacing: -0.04em;
+    }
+
+    .hero p,
+    .status,
+    .hint,
+    .meta {
+      margin: 0;
+      color: var(--muted);
+    }
+
+    .hero-actions,
+    .toolbar-actions,
+    .person-grid,
+    .filter-grid,
+    .summary-grid,
+    .card-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    button,
+    select,
+    input[type="search"] {
+      font: inherit;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      background: #fffdf9;
+      color: var(--ink);
+    }
+
+    button {
+      cursor: pointer;
+      padding: 12px 16px;
+      font-weight: 700;
+      transition: transform 120ms ease, background 120ms ease;
+    }
+
+    button:hover {
+      transform: translateY(-1px);
+    }
+
+    button.primary {
+      background: var(--ink);
+      color: white;
+      border-color: transparent;
+    }
+
+    button.secondary {
+      background: rgba(21, 111, 106, 0.08);
+      color: var(--accent);
+      border-color: rgba(21, 111, 106, 0.2);
+    }
+
+    button.warn {
+      background: rgba(214, 103, 45, 0.1);
+      color: #a64c1a;
+      border-color: rgba(214, 103, 45, 0.25);
+    }
+
+    .toolbar,
+    .summary {
+      padding: 18px;
+      margin-bottom: 18px;
+    }
+
+    .filter-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 12px;
+      margin-bottom: 12px;
+    }
+
+    label span {
+      display: block;
+      margin: 0 0 6px;
+      font-size: 0.83rem;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    select,
+    input[type="search"] {
+      width: 100%;
+      padding: 11px 14px;
+      min-height: 46px;
+    }
+
+    .summary-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 12px;
+    }
+
+    .stat {
+      padding: 14px 16px;
+      border-radius: 18px;
+      background: linear-gradient(180deg, rgba(255,255,255,0.85), rgba(255,250,242,0.95));
+      border: 1px solid rgba(28, 26, 23, 0.08);
+    }
+
+    .stat strong {
+      display: block;
+      font-size: 1.6rem;
+      line-height: 1;
+      margin-bottom: 6px;
+    }
+
+    .cards {
+      padding: 18px;
+    }
+
+    .cards-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 16px;
+    }
+
+    .card {
+      display: grid;
+      grid-template-columns: 120px 1fr;
+      gap: 14px;
+      padding: 14px;
+      background: var(--panel-strong);
+      border: 1px solid rgba(28, 26, 23, 0.08);
+      border-radius: 20px;
+      box-shadow: 0 8px 24px rgba(26, 19, 12, 0.06);
+    }
+
+    .photo {
+      width: 120px;
+      aspect-ratio: 4 / 3;
+      border-radius: 16px;
+      background: linear-gradient(135deg, rgba(21,111,106,0.18), rgba(214,103,45,0.22));
+      border: 1px solid rgba(28, 26, 23, 0.08);
+      background-size: cover;
+      background-position: center;
+      display: grid;
+      place-items: end start;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .photo::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, transparent 45%, rgba(0,0,0,0.48) 100%);
+    }
+
+    .photo-tag {
+      position: relative;
+      z-index: 1;
+      margin: 10px;
+      padding: 4px 8px;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.84);
+      font-size: 0.72rem;
+      font-weight: 700;
+    }
+
+    .card h2 {
+      margin: 0 0 4px;
+      font-size: 1.15rem;
+      line-height: 1.12;
+    }
+
+    .meta {
+      font-size: 0.92rem;
+    }
+
+    .person-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 8px;
+      margin-top: 12px;
+    }
+
+    .person-toggle {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 9px 10px;
+      border-radius: 14px;
+      background: white;
+      border: 1px solid rgba(28, 26, 23, 0.08);
+    }
+
+    .person-toggle input {
+      width: 18px;
+      height: 18px;
+      accent-color: var(--accent);
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      border-radius: 999px;
+      background: rgba(21, 111, 106, 0.08);
+      color: var(--accent);
+      padding: 5px 10px;
+      font-size: 0.8rem;
+      font-weight: 700;
+      margin-top: 10px;
+    }
+
+    .empty {
+      padding: 36px 18px;
+      text-align: center;
+      color: var(--muted);
+    }
+
+    .hidden {
+      display: none !important;
+    }
+
+    a.inline-link {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    @media (max-width: 880px) {
+      .filter-grid,
+      .summary-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 640px) {
+      .shell {
+        width: min(100vw - 16px, 1000px);
+        margin-top: 12px;
+      }
+
+      .filter-grid,
+      .summary-grid,
+      .person-grid,
+      .cards-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .card {
+        grid-template-columns: 1fr;
+      }
+
+      .photo {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="shell">
+    <section class="hero">
+      <p class="badge">Coaster Credits</p>
+      <h1>Edit family ride credits without touching the CSV by hand.</h1>
+      <p>
+        Open the existing coaster file, flip ride credits on or off, verify the coaster from its photo,
+        then save the updated CSV back out.
+      </p>
+      <div class="hero-actions">
+        <button id="loadDefaultButton" class="primary">Load Workspace CSV</button>
+        <button id="openButton" class="secondary">Open Another CSV</button>
+        <button id="saveButton" class="primary" disabled>Save CSV</button>
+        <button id="downloadButton" class="warn" disabled>Download Copy</button>
+      </div>
+      <p id="statusText" class="status">Waiting for data.</p>
+      <p class="hint">
+        Best experience: serve this folder over a local web server. If direct save is blocked, use Download Copy.
+      </p>
+    </section>
+
+    <section class="toolbar">
+      <div class="filter-grid">
+        <label>
+          <span>Search</span>
+          <input id="searchInput" type="search" placeholder="Coaster, park, or manufacturer">
+        </label>
+        <label>
+          <span>Park</span>
+          <select id="parkFilter"></select>
+        </label>
+        <label>
+          <span>Person</span>
+          <select id="personFilter"></select>
+        </label>
+        <label>
+          <span>Show</span>
+          <select id="creditFilter">
+            <option value="all">All coasters</option>
+            <option value="ridden">Only ridden by selected person</option>
+            <option value="not-ridden">Only not ridden by selected person</option>
+          </select>
+        </label>
+      </div>
+      <div class="toolbar-actions">
+        <button id="markVisibleButton" class="secondary" disabled>Mark Visible for Selected Person</button>
+        <button id="clearVisibleButton" class="secondary" disabled>Clear Visible for Selected Person</button>
+        <button id="resetFiltersButton" class="secondary">Reset Filters</button>
+      </div>
+    </section>
+
+    <section class="summary">
+      <div class="summary-grid">
+        <div class="stat"><strong id="visibleCount">0</strong><span>Visible coasters</span></div>
+        <div class="stat"><strong id="editedCount">0</strong><span>Unsaved changes</span></div>
+        <div class="stat"><strong id="loadedFileName">None</strong><span>Loaded file</span></div>
+        <div class="stat"><strong id="selectedPerson">Kobra Kid</strong><span>Bulk edit person</span></div>
+      </div>
+    </section>
+
+    <section class="cards">
+      <div id="cardsGrid" class="cards-grid"></div>
+      <div id="emptyState" class="empty hidden">No coasters match the current filters.</div>
+    </section>
+  </div>
+
+  <script>
+    const FAMILY_COLUMNS = ['Kobra Kid', 'Melanie', 'DooDad', 'Mom'];
+    const DEFAULT_CSV = './coasters_full_list_no_kings.csv';
+    const MANIFEST_PATH = './coaster_photo_manifest.json';
+    const state = {
+      rows: [],
+      headers: [],
+      originalByKey: new Map(),
+      photoByKey: new Map(),
+      fileHandle: null,
+      fileName: '',
+      selectedPerson: 'Kobra Kid',
+      manifestLoaded: false,
+    };
+
+    const ui = {
+      loadDefaultButton: document.getElementById('loadDefaultButton'),
+      openButton: document.getElementById('openButton'),
+      saveButton: document.getElementById('saveButton'),
+      downloadButton: document.getElementById('downloadButton'),
+      markVisibleButton: document.getElementById('markVisibleButton'),
+      clearVisibleButton: document.getElementById('clearVisibleButton'),
+      resetFiltersButton: document.getElementById('resetFiltersButton'),
+      statusText: document.getElementById('statusText'),
+      searchInput: document.getElementById('searchInput'),
+      parkFilter: document.getElementById('parkFilter'),
+      personFilter: document.getElementById('personFilter'),
+      creditFilter: document.getElementById('creditFilter'),
+      visibleCount: document.getElementById('visibleCount'),
+      editedCount: document.getElementById('editedCount'),
+      loadedFileName: document.getElementById('loadedFileName'),
+      selectedPerson: document.getElementById('selectedPerson'),
+      cardsGrid: document.getElementById('cardsGrid'),
+      emptyState: document.getElementById('emptyState'),
+    };
+
+    function rowKey(row) {
+      return `${row.park}|||${row.coaster}`;
+    }
+
+    function escapeHtml(value) {
+      return String(value ?? '')
+        .replaceAll('&', '&amp;')
+        .replaceAll('<', '&lt;')
+        .replaceAll('>', '&gt;')
+        .replaceAll('"', '&quot;');
+    }
+
+    function isTrue(value) {
+      return String(value ?? '').trim().toLowerCase() === 'true';
+    }
+
+    function parseCsv(text) {
+      const rows = [];
+      let current = '';
+      let row = [];
+      let inQuotes = false;
+
+      for (let index = 0; index < text.length; index += 1) {
+        const char = text[index];
+        const next = text[index + 1];
+
+        if (char === '"') {
+          if (inQuotes && next === '"') {
+            current += '"';
+            index += 1;
+          } else {
+            inQuotes = !inQuotes;
+          }
+          continue;
+        }
+
+        if (char === ',' && !inQuotes) {
+          row.push(current);
+          current = '';
+          continue;
+        }
+
+        if ((char === '\n' || char === '\r') && !inQuotes) {
+          if (char === '\r' && next === '\n') {
+            index += 1;
+          }
+          row.push(current);
+          current = '';
+          if (row.some(cell => cell !== '')) {
+            rows.push(row);
+          }
+          row = [];
+          continue;
+        }
+
+        current += char;
+      }
+
+      if (current.length || row.length) {
+        row.push(current);
+        rows.push(row);
+      }
+
+      const [headers, ...dataRows] = rows;
+      return {
+        headers,
+        rows: dataRows.map(values => Object.fromEntries(headers.map((header, index) => [header, values[index] ?? '']))),
+      };
+    }
+
+    function stringifyCsv(headers, rows) {
+      const encode = value => {
+        const text = String(value ?? '');
+        return /[",\r\n]/.test(text) ? `"${text.replaceAll('"', '""')}"` : text;
+      };
+
+      const lines = [headers.map(encode).join(',')];
+      for (const row of rows) {
+        lines.push(headers.map(header => encode(row[header] ?? '')).join(','));
+      }
+      return `${lines.join('\r\n')}\r\n`;
+    }
+
+    function setStatus(message) {
+      ui.statusText.textContent = message;
+    }
+
+    function updateSummary(filteredRows) {
+      const changed = state.rows.filter(row => FAMILY_COLUMNS.some(person => row[person] !== state.originalByKey.get(rowKey(row))?.[person]));
+      ui.visibleCount.textContent = String(filteredRows.length);
+      ui.editedCount.textContent = String(changed.length);
+      ui.loadedFileName.textContent = state.fileName || 'None';
+      ui.selectedPerson.textContent = state.selectedPerson;
+      ui.saveButton.disabled = !state.rows.length;
+      ui.downloadButton.disabled = !state.rows.length;
+      ui.markVisibleButton.disabled = !state.rows.length;
+      ui.clearVisibleButton.disabled = !state.rows.length;
+    }
+
+    function applyFilters() {
+      const search = ui.searchInput.value.trim().toLowerCase();
+      const park = ui.parkFilter.value;
+      const person = ui.personFilter.value;
+      const creditMode = ui.creditFilter.value;
+
+      state.selectedPerson = person;
+
+      const filteredRows = state.rows.filter(row => {
+        const haystack = `${row.coaster} ${row.park} ${row.manufacturer}`.toLowerCase();
+        if (search && !haystack.includes(search)) {
+          return false;
+        }
+        if (park !== 'all' && row.park !== park) {
+          return false;
+        }
+        if (creditMode === 'ridden' && !isTrue(row[person])) {
+          return false;
+        }
+        if (creditMode === 'not-ridden' && isTrue(row[person])) {
+          return false;
+        }
+        return true;
+      });
+
+      renderCards(filteredRows);
+      updateSummary(filteredRows);
+    }
+
+    function renderCards(rows) {
+      ui.cardsGrid.innerHTML = rows.map(row => renderCard(row)).join('');
+      ui.emptyState.classList.toggle('hidden', rows.length !== 0);
+
+      for (const input of ui.cardsGrid.querySelectorAll('input[type="checkbox"]')) {
+        input.addEventListener('change', event => {
+          const coasterKey = event.target.dataset.key;
+          const person = event.target.dataset.person;
+          const row = state.rows.find(item => rowKey(item) === coasterKey);
+          if (!row) {
+            return;
+          }
+          row[person] = event.target.checked ? 'True' : 'False';
+          updateSummary(rows);
+        });
+      }
+    }
+
+    function renderCard(row) {
+      const photo = state.photoByKey.get(rowKey(row)) || {};
+      const imageUrl = photo.thumb_url || photo.image_url || '';
+      const parkTag = escapeHtml(row.park || 'Unknown park');
+      const photoStyle = imageUrl ? ` style="background-image: url('${escapeHtml(imageUrl)}');"` : '';
+      const creditCount = FAMILY_COLUMNS.filter(person => isTrue(row[person])).length;
+
+      return `
+        <article class="card">
+          <div class="photo"${photoStyle}>
+            <span class="photo-tag">${parkTag}</span>
+          </div>
+          <div>
+            <h2>${escapeHtml(row.coaster)}</h2>
+            <p class="meta">${escapeHtml(row.manufacturer || 'Unknown manufacturer')} · ${escapeHtml(row.park)} · ${escapeHtml(row.state || '')}</p>
+            <p class="meta">Year ${escapeHtml(row.year_built || 'Unknown')} · Drop ${escapeHtml(row.drop_ft || '—')} ft · Speed ${escapeHtml(row.max_speed_mph || '—')} mph</p>
+            <div class="badge">${creditCount} of ${FAMILY_COLUMNS.length} family credits checked</div>
+            <div class="person-grid">
+              ${FAMILY_COLUMNS.map(person => `
+                <label class="person-toggle">
+                  <input
+                    type="checkbox"
+                    data-key="${escapeHtml(rowKey(row))}"
+                    data-person="${escapeHtml(person)}"
+                    ${isTrue(row[person]) ? 'checked' : ''}
+                  >
+                  <span>${escapeHtml(person)}</span>
+                </label>
+              `).join('')}
+            </div>
+            ${photo.source_url ? `<div class="card-actions"><a class="inline-link" href="${escapeHtml(photo.source_url)}" target="_blank" rel="noreferrer">Open RCDB source</a></div>` : ''}
+          </div>
+        </article>
+      `;
+    }
+
+    function populateFilters() {
+      const parks = ['all', ...new Set(state.rows.map(row => row.park).filter(Boolean))];
+      ui.parkFilter.innerHTML = parks.map(park => `<option value="${escapeHtml(park)}">${park === 'all' ? 'All parks' : escapeHtml(park)}</option>`).join('');
+      ui.personFilter.innerHTML = FAMILY_COLUMNS.map(person => `<option value="${escapeHtml(person)}">${escapeHtml(person)}</option>`).join('');
+      ui.personFilter.value = state.selectedPerson;
+    }
+
+    async function loadManifest() {
+      try {
+        const response = await fetch(MANIFEST_PATH, { cache: 'no-store' });
+        if (!response.ok) {
+          throw new Error(`Manifest request failed: ${response.status}`);
+        }
+        const manifest = await response.json();
+        state.photoByKey = new Map(manifest.map(entry => [rowKey(entry), entry]));
+        state.manifestLoaded = true;
+      } catch {
+        state.photoByKey = new Map();
+        state.manifestLoaded = false;
+      }
+    }
+
+    function loadParsedData(parsed, fileName, fileHandle = null) {
+      state.headers = parsed.headers;
+      state.rows = parsed.rows;
+      state.fileName = fileName;
+      state.fileHandle = fileHandle;
+      state.originalByKey = new Map(parsed.rows.map(row => [rowKey(row), { ...row }]));
+
+      populateFilters();
+      applyFilters();
+
+      const photoStatus = state.manifestLoaded ? 'Photos loaded.' : 'Photo manifest missing or unavailable.';
+      setStatus(`Loaded ${parsed.rows.length} coasters from ${fileName}. ${photoStatus}`);
+    }
+
+    async function loadDefaultCsv() {
+      try {
+        await loadManifest();
+        const response = await fetch(DEFAULT_CSV, { cache: 'no-store' });
+        if (!response.ok) {
+          throw new Error(`CSV request failed: ${response.status}`);
+        }
+        const text = await response.text();
+        loadParsedData(parseCsv(text), 'coasters_full_list_no_kings.csv');
+      } catch (error) {
+        setStatus(`Could not auto-load workspace CSV. Use Open Another CSV. ${error.message}`);
+      }
+    }
+
+    async function openCsvFromDisk() {
+      try {
+        await loadManifest();
+        if ('showOpenFilePicker' in window) {
+          const [handle] = await window.showOpenFilePicker({
+            multiple: false,
+            types: [{ description: 'CSV files', accept: { 'text/csv': ['.csv'] } }],
+          });
+          const file = await handle.getFile();
+          const text = await file.text();
+          loadParsedData(parseCsv(text), file.name, handle);
+          return;
+        }
+
+        const input = document.createElement('input');
+        input.type = 'file';
+        input.accept = '.csv,text/csv';
+        input.addEventListener('change', async () => {
+          const file = input.files?.[0];
+          if (!file) {
+            return;
+          }
+          const text = await file.text();
+          loadParsedData(parseCsv(text), file.name);
+        }, { once: true });
+        input.click();
+      } catch (error) {
+        setStatus(`Open cancelled or failed. ${error.message}`);
+      }
+    }
+
+    async function saveCsv() {
+      if (!state.rows.length) {
+        return;
+      }
+
+      const csvText = stringifyCsv(state.headers, state.rows);
+
+      try {
+        if (state.fileHandle) {
+          const writable = await state.fileHandle.createWritable();
+          await writable.write(csvText);
+          await writable.close();
+          state.originalByKey = new Map(state.rows.map(row => [rowKey(row), { ...row }]));
+          applyFilters();
+          setStatus(`Saved ${state.fileName}.`);
+          return;
+        }
+
+        if ('showSaveFilePicker' in window) {
+          const handle = await window.showSaveFilePicker({
+            suggestedName: state.fileName || 'coasters_full_list_no_kings.csv',
+            types: [{ description: 'CSV files', accept: { 'text/csv': ['.csv'] } }],
+          });
+          const writable = await handle.createWritable();
+          await writable.write(csvText);
+          await writable.close();
+          state.fileHandle = handle;
+          state.fileName = state.fileName || 'coasters_full_list_no_kings.csv';
+          state.originalByKey = new Map(state.rows.map(row => [rowKey(row), { ...row }]));
+          applyFilters();
+          setStatus(`Saved ${state.fileName}.`);
+          return;
+        }
+
+        downloadCsv();
+      } catch (error) {
+        setStatus(`Save failed. ${error.message}`);
+      }
+    }
+
+    function downloadCsv() {
+      if (!state.rows.length) {
+        return;
+      }
+      const csvText = stringifyCsv(state.headers, state.rows);
+      const blob = new Blob([csvText], { type: 'text/csv;charset=utf-8' });
+      const url = URL.createObjectURL(blob);
+      const anchor = document.createElement('a');
+      anchor.href = url;
+      anchor.download = state.fileName || 'coasters_full_list_no_kings.csv';
+      anchor.click();
+      URL.revokeObjectURL(url);
+      setStatus('Downloaded updated CSV copy.');
+    }
+
+    function bulkSetVisible(value) {
+      const person = ui.personFilter.value;
+      const search = ui.searchInput.value.trim().toLowerCase();
+      const park = ui.parkFilter.value;
+
+      for (const row of state.rows) {
+        const haystack = `${row.coaster} ${row.park} ${row.manufacturer}`.toLowerCase();
+        if (search && !haystack.includes(search)) {
+          continue;
+        }
+        if (park !== 'all' && row.park !== park) {
+          continue;
+        }
+        row[person] = value ? 'True' : 'False';
+      }
+
+      applyFilters();
+      setStatus(`${value ? 'Marked' : 'Cleared'} visible coasters for ${person}.`);
+    }
+
+    ui.loadDefaultButton.addEventListener('click', loadDefaultCsv);
+    ui.openButton.addEventListener('click', openCsvFromDisk);
+    ui.saveButton.addEventListener('click', saveCsv);
+    ui.downloadButton.addEventListener('click', downloadCsv);
+    ui.markVisibleButton.addEventListener('click', () => bulkSetVisible(true));
+    ui.clearVisibleButton.addEventListener('click', () => bulkSetVisible(false));
+    ui.resetFiltersButton.addEventListener('click', () => {
+      ui.searchInput.value = '';
+      ui.parkFilter.value = 'all';
+      ui.personFilter.value = 'Kobra Kid';
+      ui.creditFilter.value = 'all';
+      applyFilters();
+    });
+
+    for (const control of [ui.searchInput, ui.parkFilter, ui.personFilter, ui.creditFilter]) {
+      control.addEventListener('input', applyFilters);
+      control.addEventListener('change', applyFilters);
+    }
+
+    loadDefaultCsv();
+  </script>
+</body>
+</html>

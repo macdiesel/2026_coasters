@@ -1,0 +1,98 @@
+park,state,coaster,year_built,manufacturer,max_height_ft,drop_ft,max_speed_mph,coaster_type,track_length_ft,track_length_source_url,track_length_match_type,height_drop_source_url,height_drop_match_type,Kobra Kid,Melanie,DooDad,Mom,ride_time_sec
+Cedar Point,OH,Blue Streak,1964,Philadelphia Toboggan Coasters,78.0,72.0,40.0,wood,2558.0,https://rcdb.com/12.htm,exact,https://rcdb.com/12.htm,existing-source,True,,,,105.0
+Cedar Point,OH,Cedar Creek Mine Ride,1969,Arrow Development,48.0,30.0,42.0,steel,2540.0,https://rcdb.com/18.htm,direct,https://rcdb.com/18.htm,existing-source,True,,,,162.0
+Cedar Point,OH,Corkscrew,1976,Arrow Development,85.0,65.0,48.0,steel,2050.0,https://rcdb.com/13.htm,exact,https://rcdb.com/13.htm,existing-source,True,,,,120.0
+Cedar Point,OH,Gemini,1978,Arrow Dynamics,125.0,118.0,60.0,steel,3935.0,https://rcdb.com/14.htm,exact,https://rcdb.com/14.htm,existing-source,True,,,,140.0
+Cedar Point,OH,Iron Dragon,1987,Arrow Dynamics,76.0,60.0,40.0,steel,2800.0,https://rcdb.com/17.htm,direct,https://rcdb.com/17.htm,existing-source,,,,,120.0
+Cedar Point,OH,Magnum XL-200,1989,Arrow Dynamics,205.0,195.0,72.0,steel,5106.0,https://rcdb.com/11.htm,direct,https://rcdb.com/11.htm,existing-source,,,,,120.0
+Cedar Point,OH,Raptor,1994,Bolliger & Mabillard,137.0,119.0,57.0,steel,3790.0,https://rcdb.com/1.htm,exact,https://rcdb.com/1.htm,existing-source,,,,,136.0
+Cedar Point,OH,Millennium Force,2000,Intamin,310.0,300.0,93.0,steel,6595.0,https://rcdb.com/594.htm,exact,https://rcdb.com/594.htm,existing-source,,,,,140.0
+Cedar Point,OH,Maverick,2007,Intamin,105.0,100.0,70.0,launch,4450.0,https://rcdb.com/3570.htm,exact,https://rcdb.com/3570.htm,existing-source,,,,,150.0
+Cedar Point,OH,GateKeeper,2013,Bolliger & Mabillard,170.0,164.0,67.0,steel,4164.0,https://rcdb.com/10891.htm,direct,https://rcdb.com/10891.htm,existing-source,,,,,160.0
+Cedar Point,OH,Valravn,2016,Bolliger & Mabillard,223.0,214.0,75.0,steel,3415.0,https://rcdb.com/13383.htm,direct,https://rcdb.com/13383.htm,existing-source,,,,,
+Cedar Point,OH,Steel Vengeance,2018,Rocky Mountain Construction,205.0,200.0,74.0,rmc,5740.0,https://rcdb.com/15411.htm,direct,https://rcdb.com/15411.htm,existing-source,,,,,150.0
+Cedar Point,OH,Wild Mouse,2023,Zamperla,52.0,,35.0,steel,,,no-length,,no-stats,,,,,
+Cedar Point,OH,Top Thrill 2,2024,Zamperla,420.0,400.0,120.0,launch,3422.0,https://rcdb.com/1896.htm,direct,https://rcdb.com/1896.htm,existing-source,,,,,30.0
+Cedar Point,OH,Woodstock Express,,Vekoma,42.7,,,steel,1099.1,https://rcdb.com/553.htm,exact,https://rcdb.com/553.htm,existing-source,,,,,66.0
+Cedar Point,OH,Wilderness Run,1979,Intamin,19.0,,,steel,443.0,https://rcdb.com/15.htm,exact,https://rcdb.com/15.htm,existing-source,,,,,50.0
+Cedar Point,OH,Rougarou,2015 (conversion),Bolliger & Mabillard,145.0,137.0,60.0,steel,3900.0,https://rcdb.com/7.htm,direct,https://rcdb.com/7.htm,existing-source,,,,,160.0
+Cedar Point,OH,Siren's Curse,2025,Vekoma,160.0,,,steel,2965.9,https://rcdb.com/22124.htm,direct,https://rcdb.com/22124.htm,existing-source,,,,,
+Six Flags Great Adventure,NJ,Batman The Ride,1993,Bolliger & Mabillard,105.0,87.0,50.0,steel,2693.0,https://rcdb.com/32.htm,exact,https://rcdb.com/32.htm,existing-source,False,False,False,,90.0
+Six Flags Great Adventure,NJ,The Dark Knight Coaster,2008,Mack Rides,,,35.0,steel,,,none,,none,True,True,True,,
+Six Flags Great Adventure,NJ,El Toro,2006,Intamin,181.0,176.0,70.0,wood,4400.0,https://rcdb.com/3183.htm,exact,https://rcdb.com/3183.htm,existing-source,True,True,True,,102.0
+Six Flags Great Adventure,NJ,Jersey Devil Coaster,2021,Rocky Mountain Construction,130.0,122.0,58.0,rmc,3000.0,https://rcdb.com/17658.htm,direct,https://rcdb.com/17658.htm,existing-source,True,True,True,,
+Six Flags Great Adventure,NJ,The Joker,2016,S&S – Sansei,120.0,54.0,38.0,steel,1019.0,https://rcdb.com/13421.htm,exact,https://rcdb.com/13421.htm,existing-source,True,True,True,,
+Six Flags Great Adventure,NJ,Lil' Devil Coaster,2021,Zamperla,13.0,,,steel,262.5,https://rcdb.com/19460.htm,direct,https://rcdb.com/19460.htm,existing-source,True,True,True,,40.0
+Six Flags Great Adventure,NJ,Medusa,1999,Bolliger & Mabillard,142.0,132.0,61.0,steel,3985.0,https://rcdb.com/502.htm,exact,https://rcdb.com/502.htm,existing-source,False,True,True,,140.0
+Six Flags Great Adventure,NJ,Nitro,2001,Bolliger & Mabillard,230.0,215.0,80.0,steel,5394.0,https://rcdb.com/1106.htm,exact,https://rcdb.com/1106.htm,existing-source,True,True,True,,140.0
+Six Flags Great Adventure,NJ,Runaway Mine Train,1974,Arrow Development,60.0,39.0,,steel,,,no-length,https://rcdb.com/131.htm,exact,True,True,True,,120.0
+Six Flags Great Adventure,NJ,Skull Mountain,1996,Premier Rides,40.5,37.0,,steel,1377.0,https://rcdb.com/35.htm,direct,https://rcdb.com/35.htm,existing-source,True,True,True,,84.0
+Six Flags Great Adventure,NJ,Superman - Ultimate Flight,2003,Bolliger & Mabillard,106.0,100.0,51.0,steel,2759.0,https://rcdb.com/1976.htm,exact,https://rcdb.com/1976.htm,existing-source,True,True,True,,126.0
+Six Flags Great Adventure,NJ,Harley Quinn Crazy Train,1999,Zamperla,26.3,,,steel,1181.1,https://rcdb.com/567.htm,direct,https://rcdb.com/567.htm,existing-source,True,True,True,,65.0
+Six Flags Great Adventure,NJ,Flash: Vertical Velocity,2024,Zierer/Intamin,,,,steel,1430.4,https://rcdb.com/21088.htm,exact,,no-stats,False,True,True,,
+Six Flags New England,MA,Batman - The Dark Knight,2002,Bolliger & Mabillard,117.0,109.0,55.0,steel,2600.0,https://rcdb.com/1549.htm,direct,https://rcdb.com/1549.htm,existing-source,True,True,True,True,140.0
+Six Flags New England,MA,Catwoman's Whip,2000,Miler,26.3,,,steel,1181.1,https://rcdb.com/630.htm,direct,https://rcdb.com/630.htm,existing-source,True,True,True,True,
+Six Flags New England,MA,Flashback,1990,Vekoma,116.0,108.0,47.0,steel,935.0,https://rcdb.com/629.htm,exact,https://rcdb.com/629.htm,existing-source,True,True,True,True,108.0
+Six Flags New England,MA,Gotham City Gauntlet Escape from Arkham Asylum,2011,Zamperla,49.3,,,steel,1213.9,https://rcdb.com/9431.htm,direct,https://rcdb.com/9431.htm,existing-source,True,True,True,True,92.0
+Six Flags New England,MA,Great Chase,1997,Zamperla,,,,steel,,,no-length,,no-stats,True,True,True,True,
+Six Flags New England,MA,Pandemonium,2005,Gerstlauer,55.0,,31.0,steel,,,no-length,https://rcdb.com/3031.htm,exact,True,True,True,True,
+Six Flags New England,MA,Superman the Ride,2000,Intamin,208.0,221.0,77.0,steel,5400.0,https://rcdb.com/628.htm,exact,https://rcdb.com/628.htm,existing-source,True,True,True,True,155.0
+Six Flags New England,MA,The Joker,2017,S&S – Sansei,120.0,54.0,38.0,steel,1019.0,https://rcdb.com/14189.htm,exact,https://rcdb.com/14189.htm,existing-source,False,False,False,False,
+Six Flags New England,MA,Thunderbolt,1941,Philadelphia Toboggan Coasters,70.0,65.0,40.0,wood,2600.0,https://rcdb.com/182.htm,exact,https://rcdb.com/182.htm,existing-source,True,True,True,True,60.0
+Six Flags New England,MA,Wicked Cyclone,2015,Rocky Mountain Construction,109.0,100.0,55.0,rmc,3320.0,https://rcdb.com/1981.htm,direct,https://rcdb.com/1981.htm,existing-source,True,True,True,True,
+Six Flags New England,MA,The Riddler Revenge,2024,Vekoma,109.3,109.3,55.0,steel,2260.5,https://rcdb.com/429.htm,direct,https://rcdb.com/429.htm,existing-source,True,True,True,True,96.0
+Six Flags New England,MA,Quantum Accelerator,2026,Intamin,59.0,59.0,45.0,launch,2604.0,https://rcdb.com/22026.htm,direct,https://rcdb.com/22026.htm,direct,True,True,True,True,134.0
+Dorney Park,PA,Thunderhawk,1924,Philadelphia Toboggan Coasters,80.0,65.0,45.0,wood,2767.0,https://rcdb.com/239.htm,park-fuzzy,https://rcdb.com/239.htm,existing-source,,,,,78.0
+Dorney Park,PA,Steel Force,1997,Morgan,200.0,205.0,75.0,steel,5600.0,https://rcdb.com/276.htm,direct,https://rcdb.com/276.htm,existing-source,,,,,180.0
+Dorney Park,PA,Wild Mouse,2000,Maurer,,,,steel,,,no-length,,no-stats,,,,,
+Dorney Park,PA,Woodstock Express,2000,Zamperla,13.0,,,steel,262.5,https://rcdb.com/642.htm,park-fuzzy,https://rcdb.com/642.htm,existing-source,,,,,
+Dorney Park,PA,Talon,2001,Bolliger & Mabillard,135.0,120.0,58.0,steel,3110.0,https://rcdb.com/735.htm,park-fuzzy,https://rcdb.com/735.htm,existing-source,,,,,
+Dorney Park,PA,Hydra the Revenge,2005,Bolliger & Mabillard,95.0,105.0,53.0,steel,3198.0,https://rcdb.com/2528.htm,direct,https://rcdb.com/2528.htm,existing-source,,,,,155.0
+Dorney Park,PA,Possessed,2008,Intamin,185.0,,70.0,launch,629.9,https://rcdb.com/4039.htm,direct,https://rcdb.com/4039.htm,existing-source,,,,,
+Dorney Park,PA,Iron Menace,2024,Bolliger & Mabillard,160.0,152.0,64.0,steel,2169.0,https://rcdb.com/21085.htm,direct,https://rcdb.com/21085.htm,existing-source,,,,,90.0
+Knoebels,PA,Phoenix,1985,Philadelphia Toboggan Coasters,78.0,72.0,45.0,wood,3200.0,https://rcdb.com/143.htm,park-fuzzy,https://rcdb.com/143.htm,existing-source,,,,,120.0
+Knoebels,PA,Twister,1999,Knoebels/GCII,101.6,89.6,,wood,3900.0,https://rcdb.com/546.htm,park-fuzzy,https://rcdb.com/546.htm,existing-source,,,,,130.0
+Knoebels,PA,Flying Turns,2013,Knoebels,50.0,,,wood,1300.0,https://rcdb.com/3458.htm,park-fuzzy,https://rcdb.com/3458.htm,existing-source,,,,,
+Knoebels,PA,Kozmo's Kurves,2009,Miler,,,,steel,,,no-length,,no-stats,,,,,
+Knoebels,PA,Black Diamond,2011,Custom Coasters Intl.,35.0,,,steel,,,no-length,https://rcdb.com/4454.htm,park-fuzzy,,,,,
+Knoebels,PA,Impulse,2015,Zierer,98.0,,55.0,steel,1975.0,https://rcdb.com/12000.htm,park-fuzzy,https://rcdb.com/12000.htm,existing-source,,,,,
+Kennywood,PA,Lil' Phantom,1996,Wisdom Rides,,,,steel,,,no-length,,no-stats,,,,,
+Kennywood,PA,Exterminator,1999,Reverchon,42.0,,29.0,steel,1377.9,https://rcdb.com/538.htm,direct,https://rcdb.com/538.htm,existing-source,,,,,108.0
+Kennywood,PA,Jack Rabbit,1920,PTC / John A. Miller,40.0,70.0,45.0,wood,,,no-length,https://rcdb.com/2426.htm,fallback,,,,,
+Kennywood,PA,Racer,1927,PTC / John A. Miller,73.0,50.0,40.0,wood,,,no-length,,no-stats,,,,,
+Kennywood,PA,Thunderbolt,1968 (rebuild),PTC,70.0,90.0,,wood,3250.0,https://rcdb.com/122.htm,exact,https://rcdb.com/122.htm,existing-source,,,,,101.0
+Kennywood,PA,Phantom's Revenge,2001 (rebuild),Morgan (Arrow orig.),160.0,228.0,85.0,steel,3200.0,https://rcdb.com/123.htm,direct,https://rcdb.com/123.htm,existing-source,,,,,117.0
+Kennywood,PA,Sky Rocket,2010,Premier Rides,95.0,,50.0,launch,2100.0,https://rcdb.com/8612.htm,exact,https://rcdb.com/8612.htm,existing-source,,,,,65.0
+Kennywood,PA,Steel Curtain,2019,S&S – Sansei,220.0,,75.0,steel,4000.0,https://rcdb.com/16479.htm,direct,https://rcdb.com/16479.htm,existing-source,,,,,120.0
+Hersheypark,PA,Comet,1946,Philadelphia Toboggan Coasters,84.0,78.0,50.0,wood,1935.7,https://rcdb.com/940.htm,coaster-only,,no-stats,,,,,75.0
+Hersheypark,PA,Trailblazer,1974,Arrow Development,,,,steel,,,no-length,,no-stats,,,,,
+Hersheypark,PA,sooperdooperLooper,1977,Schwarzkopf,70.0,75.0,45.0,steel,2614.0,https://rcdb.com/108.htm,direct,https://rcdb.com/108.htm,existing-source,,,,,105.0
+Hersheypark,PA,Jolly Rancher Remix,1991 (retheme 2022),Vekoma,116.5,,47.0,steel,935.0,https://rcdb.com/109.htm,direct,https://rcdb.com/109.htm,existing-source,,,,,108.0
+Hersheypark,PA,Great Bear,1998,Bolliger & Mabillard,90.0,124.0,61.0,steel,2800.0,https://rcdb.com/468.htm,direct,https://rcdb.com/468.htm,existing-source,,,,,175.0
+Hersheypark,PA,Wild Mouse,1999,MACK Rides,,,,steel,,,no-length,,no-stats,,,,,
+Hersheypark,PA,Lightning Racer,2000,Great Coasters International,90.0,107.0,51.0,wood,3393.0,https://rcdb.com/597.htm,exact,https://rcdb.com/597.htm,existing-source,,,,,140.0
+Hersheypark,PA,Storm Runner,2004,Intamin,150.0,180.0,75.0,launch,2600.0,https://rcdb.com/2498.htm,direct,https://rcdb.com/2498.htm,existing-source,,,,,50.0
+Hersheypark,PA,Fahrenheit,2008,Intamin,121.0,97.0,58.0,steel,2700.0,https://rcdb.com/4049.htm,direct,https://rcdb.com/4049.htm,existing-source,,,,,85.0
+Hersheypark,PA,Skyrush,2012,Intamin,200.0,212.0,75.0,steel,3600.0,https://rcdb.com/10089.htm,direct,https://rcdb.com/10089.htm,existing-source,,,,,
+Hersheypark,PA,Cocoa Cruiser,2014,Zamperla,,,,steel,,,no-length,,no-stats,,,,,
+Hersheypark,PA,Laff Trakk,2015,Maurer,,,45.0,steel,1400.0,https://rcdb.com/12270.htm,direct,,no-stats,,,,,
+Hersheypark,PA,Candymonium,2020,Bolliger & Mabillard,210.0,210.0,76.0,steel,4636.0,https://rcdb.com/16682.htm,direct,https://rcdb.com/16682.htm,existing-source,,,,,146.0
+Hersheypark,PA,Wildcat's Revenge,2023,Rocky Mountain Construction,140.0,135.0,62.0,rmc,3510.0,https://rcdb.com/20462.htm,direct,https://rcdb.com/20462.htm,existing-source,,,,,156.0
+Canada's Wonderland,ON,AlpenFury,2025,Premier Rides,164.0,154.2,71.0,launch,3280.8,https://rcdb.com/22016.htm,direct,https://rcdb.com/22016.htm,existing-source,,,,,80.0
+Canada's Wonderland,ON,Backlot Stunt Coaster,2005,Premier Rides,46.0,31.2,40.0,launch,1960.0,https://rcdb.com/2861.htm,exact,https://rcdb.com/2861.htm,existing-source,,,,,64.0
+Canada's Wonderland,ON,Bat,1987,Vekoma,116.5,,,steel,935.0,https://rcdb.com/64.htm,exact,https://rcdb.com/64.htm,existing-source,,,,,108.0
+Canada's Wonderland,ON,Behemoth,2008,Bolliger & Mabillard,230.0,230.0,77.0,steel,5318.0,https://rcdb.com/4005.htm,direct,https://rcdb.com/4005.htm,existing-source,,,,,
+Canada's Wonderland,ON,Dragon Fyre,1981,Arrow Dynamics,92.0,76.0,55.0,steel,2160.0,https://rcdb.com/58.htm,direct,https://rcdb.com/58.htm,existing-source,,,,,90.0
+Canada's Wonderland,ON,Fly,1999,Mack Rides,51.8,49.8,,steel,1312.3,https://rcdb.com/540.htm,exact,https://rcdb.com/540.htm,existing-source,,,,,90.0
+Canada's Wonderland,ON,Ghoster Coaster,1981,Philadelphia Toboggan Coasters,89.0,39.0,56.0,wood,1356.0,https://rcdb.com/61.htm,exact,https://rcdb.com/61.htm,existing-source,,,,,80.0
+Canada's Wonderland,ON,Leviathan,2012,Bolliger & Mabillard,306.0,306.0,92.0,steel,5486.0,https://rcdb.com/10108.htm,exact,https://rcdb.com/10108.htm,existing-source,,,,,128.0
+Canada's Wonderland,ON,Mighty Canadian Minebuster,1981,Taft Broadcasting,89.0,87.0,56.0,wood,3828.0,https://rcdb.com/59.htm,direct,https://rcdb.com/59.htm,existing-source,,,,,122.0
+Canada's Wonderland,ON,Silver Streak,2001,Vekoma,48.6,,,steel,1122.0,https://rcdb.com/734.htm,exact,https://rcdb.com/734.htm,existing-source,,,,,76.0
+Canada's Wonderland,ON,Snoopy's Racing Railway,2023,ART Engineering,,,,steel,,,no-length,,no-stats,,,,,
+Canada's Wonderland,ON,Taxi Jam,1998,E&F Miler Industries,,,,steel,,,no-length,,no-stats,,,,,
+Canada's Wonderland,ON,The DareDeviler,1995 (renamed 2025),Vekoma,109.3,,,steel,2260.5,https://rcdb.com/57.htm,direct,https://rcdb.com/57.htm,existing-source,,,,,88.0
+Canada's Wonderland,ON,Thunder Run,1981,Mack Rides,33.0,,,steel,1083.0,https://rcdb.com/63.htm,exact,https://rcdb.com/63.htm,existing-source,,,,,84.0
+Canada's Wonderland,ON,Vortex,1991,Arrow Dynamics,92.0,85.0,55.0,steel,2361.0,https://rcdb.com/65.htm,exact,https://rcdb.com/65.htm,existing-source,,,,,96.0
+Canada's Wonderland,ON,Wilde Beast,1981,Taft Broadcasting,82.0,78.0,,wood,3150.0,https://rcdb.com/60.htm,direct,https://rcdb.com/60.htm,existing-source,,,,,122.0
+Canada's Wonderland,ON,Wonder Mountain's Guardian,2014,ART Engineering,60.0,,,steel,1000.0,https://rcdb.com/12140.htm,direct,https://rcdb.com/12140.htm,existing-source,,,,,
+Canada's Wonderland,ON,Yukon Striker,2019,Bolliger & Mabillard,223.0,245.0,81.0,steel,3625.0,https://rcdb.com/16021.htm,direct,https://rcdb.com/16021.htm,existing-source,,,,,205.0

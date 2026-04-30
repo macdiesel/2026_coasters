@@ -1,0 +1,681 @@
+[
+  {
+    "coaster": "Blue Streak",
+    "park": "Cedar Point",
+    "image_url": "https://rcdb.com/aafpqwa",
+    "thumb_url": "https://rcdb.com/aafpqwb",
+    "source_url": "https://rcdb.com/12.htm"
+  },
+  {
+    "coaster": "Cedar Creek Mine Ride",
+    "park": "Cedar Point",
+    "image_url": "https://rcdb.com/aaivuva",
+    "thumb_url": "https://rcdb.com/aaivuvb",
+    "source_url": "https://rcdb.com/18.htm"
+  },
+  {
+    "coaster": "Corkscrew",
+    "park": "Cedar Point",
+    "image_url": "https://rcdb.com/aaaacca",
+    "thumb_url": "https://rcdb.com/aaaaccb",
+    "source_url": "https://rcdb.com/13.htm"
+  },
+  {
+    "coaster": "Gemini",
+    "park": "Cedar Point",
+    "image_url": "https://rcdb.com/aaaacda",
+    "thumb_url": "https://rcdb.com/aaaacdb",
+    "source_url": "https://rcdb.com/14.htm"
+  },
+  {
+    "coaster": "Iron Dragon",
+    "park": "Cedar Point",
+    "image_url": "https://rcdb.com/aabhnpa",
+    "thumb_url": "https://rcdb.com/aabhnpb",
+    "source_url": "https://rcdb.com/17.htm"
+  },
+  {
+    "coaster": "Magnum XL-200",
+    "park": "Cedar Point",
+    "image_url": "https://rcdb.com/aaivwia",
+    "thumb_url": "https://rcdb.com/aaivwib",
+    "source_url": "https://rcdb.com/11.htm"
+  },
+  {
+    "coaster": "Raptor",
+    "park": "Cedar Point",
+    "image_url": "https://rcdb.com/aaaaaba",
+    "thumb_url": "https://rcdb.com/aaaaabb",
+    "source_url": "https://rcdb.com/1.htm"
+  },
+  {
+    "coaster": "Millennium Force",
+    "park": "Cedar Point",
+    "image_url": "https://rcdb.com/aaabcca",
+    "thumb_url": "https://rcdb.com/aaabccb",
+    "source_url": "https://rcdb.com/594.htm"
+  },
+  {
+    "coaster": "Maverick",
+    "park": "Cedar Point",
+    "image_url": "https://rcdb.com/aabcyla",
+    "thumb_url": "https://rcdb.com/aabcylb",
+    "source_url": "https://rcdb.com/3570.htm"
+  },
+  {
+    "coaster": "GateKeeper",
+    "park": "Cedar Point",
+    "image_url": "https://rcdb.com/aaddxra",
+    "thumb_url": "https://rcdb.com/aaddxrb",
+    "source_url": "https://rcdb.com/10891.htm"
+  },
+  {
+    "coaster": "Valravn",
+    "park": "Cedar Point",
+    "image_url": "https://rcdb.com/aadzksa",
+    "thumb_url": "https://rcdb.com/aadzksb",
+    "source_url": "https://rcdb.com/13383.htm"
+  },
+  {
+    "coaster": "Steel Vengeance",
+    "park": "Cedar Point",
+    "image_url": "https://rcdb.com/aaeonra",
+    "thumb_url": "https://rcdb.com/aaeonrb",
+    "source_url": "https://rcdb.com/15411.htm"
+  },
+  {
+    "coaster": "Wild Mouse",
+    "park": "Cedar Point",
+    "image_url": "",
+    "thumb_url": "",
+    "source_url": ""
+  },
+  {
+    "coaster": "Top Thrill 2",
+    "park": "Cedar Point",
+    "image_url": "https://rcdb.com/aaivxca",
+    "thumb_url": "https://rcdb.com/aaivxcb",
+    "source_url": "https://rcdb.com/1896.htm"
+  },
+  {
+    "coaster": "Woodstock Express",
+    "park": "Cedar Point",
+    "image_url": "https://rcdb.com/aaabcma",
+    "thumb_url": "https://rcdb.com/aaabcmb",
+    "source_url": "https://rcdb.com/553.htm"
+  },
+  {
+    "coaster": "Wilderness Run",
+    "park": "Cedar Point",
+    "image_url": "https://rcdb.com/aaczspa",
+    "thumb_url": "https://rcdb.com/aaczspb",
+    "source_url": "https://rcdb.com/15.htm"
+  },
+  {
+    "coaster": "Rougarou",
+    "park": "Cedar Point",
+    "image_url": "https://rcdb.com/aaivwpa",
+    "thumb_url": "https://rcdb.com/aaivwpb",
+    "source_url": "https://rcdb.com/7.htm"
+  },
+  {
+    "coaster": "Siren's Curse",
+    "park": "Cedar Point",
+    "image_url": "https://rcdb.com/aaivwqa",
+    "thumb_url": "https://rcdb.com/aaivwqb",
+    "source_url": "https://rcdb.com/22124.htm"
+  },
+  {
+    "coaster": "Batman The Ride",
+    "park": "Six Flags Great Adventure",
+    "image_url": "https://rcdb.com/aahzcwa",
+    "thumb_url": "https://rcdb.com/aahzcwb",
+    "source_url": "https://rcdb.com/32.htm"
+  },
+  {
+    "coaster": "The Dark Knight Coaster",
+    "park": "Six Flags Great Adventure",
+    "image_url": "",
+    "thumb_url": "",
+    "source_url": ""
+  },
+  {
+    "coaster": "El Toro",
+    "park": "Six Flags Great Adventure",
+    "image_url": "https://rcdb.com/aaayvga",
+    "thumb_url": "https://rcdb.com/aaayvgb",
+    "source_url": "https://rcdb.com/3183.htm"
+  },
+  {
+    "coaster": "Jersey Devil Coaster",
+    "park": "Six Flags Great Adventure",
+    "image_url": "https://rcdb.com/aahfvaa",
+    "thumb_url": "https://rcdb.com/aahfvab",
+    "source_url": "https://rcdb.com/17658.htm"
+  },
+  {
+    "coaster": "The Joker",
+    "park": "Six Flags Great Adventure",
+    "image_url": "https://rcdb.com/aahozwa",
+    "thumb_url": "https://rcdb.com/aahozwb",
+    "source_url": "https://rcdb.com/13421.htm"
+  },
+  {
+    "coaster": "Lil' Devil Coaster",
+    "park": "Six Flags Great Adventure",
+    "image_url": "https://rcdb.com/aahjmxa",
+    "thumb_url": "https://rcdb.com/aahjmxb",
+    "source_url": "https://rcdb.com/19460.htm"
+  },
+  {
+    "coaster": "Medusa",
+    "park": "Six Flags Great Adventure",
+    "image_url": "https://rcdb.com/aaiviaa",
+    "thumb_url": "https://rcdb.com/aaiviab",
+    "source_url": "https://rcdb.com/502.htm"
+  },
+  {
+    "coaster": "Nitro",
+    "park": "Six Flags Great Adventure",
+    "image_url": "https://rcdb.com/aaalrma",
+    "thumb_url": "https://rcdb.com/aaalrmb",
+    "source_url": "https://rcdb.com/1106.htm"
+  },
+  {
+    "coaster": "Runaway Mine Train",
+    "park": "Six Flags Great Adventure",
+    "image_url": "https://rcdb.com/aaftyha",
+    "thumb_url": "https://rcdb.com/aaftyhb",
+    "source_url": "https://rcdb.com/131.htm"
+  },
+  {
+    "coaster": "Skull Mountain",
+    "park": "Six Flags Great Adventure",
+    "image_url": "https://rcdb.com/aaabnpa",
+    "thumb_url": "https://rcdb.com/aaabnpb",
+    "source_url": "https://rcdb.com/35.htm"
+  },
+  {
+    "coaster": "Superman - Ultimate Flight",
+    "park": "Six Flags Great Adventure",
+    "image_url": "https://rcdb.com/aaifsca",
+    "thumb_url": "https://rcdb.com/aaifscb",
+    "source_url": "https://rcdb.com/1976.htm"
+  },
+  {
+    "coaster": "Harley Quinn Crazy Train",
+    "park": "Six Flags Great Adventure",
+    "image_url": "https://rcdb.com/aaivuea",
+    "thumb_url": "https://rcdb.com/aaivueb",
+    "source_url": "https://rcdb.com/567.htm"
+  },
+  {
+    "coaster": "Flash: Vertical Velocity",
+    "park": "Six Flags Great Adventure",
+    "image_url": "",
+    "thumb_url": "",
+    "source_url": ""
+  },
+  {
+    "coaster": "Batman - The Dark Knight",
+    "park": "Six Flags New England",
+    "image_url": "https://rcdb.com/aaawdea",
+    "thumb_url": "https://rcdb.com/aaawdeb",
+    "source_url": "https://rcdb.com/1549.htm"
+  },
+  {
+    "coaster": "Catwoman's Whip",
+    "park": "Six Flags New England",
+    "image_url": "https://rcdb.com/aagugha",
+    "thumb_url": "https://rcdb.com/aagughb",
+    "source_url": "https://rcdb.com/630.htm"
+  },
+  {
+    "coaster": "Flashback",
+    "park": "Six Flags New England",
+    "image_url": "https://rcdb.com/aaajmha",
+    "thumb_url": "https://rcdb.com/aaajmhb",
+    "source_url": "https://rcdb.com/629.htm"
+  },
+  {
+    "coaster": "Gotham City Gauntlet Escape from Arkham Asylum",
+    "park": "Six Flags New England",
+    "image_url": "https://rcdb.com/aagjmba",
+    "thumb_url": "https://rcdb.com/aagjmbb",
+    "source_url": "https://rcdb.com/9431.htm"
+  },
+  {
+    "coaster": "Great Chase",
+    "park": "Six Flags New England",
+    "image_url": "",
+    "thumb_url": "",
+    "source_url": ""
+  },
+  {
+    "coaster": "Pandemonium",
+    "park": "Six Flags New England",
+    "image_url": "https://rcdb.com/aaaryda",
+    "thumb_url": "https://rcdb.com/aaarydb",
+    "source_url": "https://rcdb.com/3031.htm"
+  },
+  {
+    "coaster": "Superman the Ride",
+    "park": "Six Flags New England",
+    "image_url": "https://rcdb.com/aahwjka",
+    "thumb_url": "https://rcdb.com/aahwjkb",
+    "source_url": "https://rcdb.com/628.htm"
+  },
+  {
+    "coaster": "The Joker",
+    "park": "Six Flags New England",
+    "image_url": "https://rcdb.com/aaekmya",
+    "thumb_url": "https://rcdb.com/aaekmyb",
+    "source_url": "https://rcdb.com/14189.htm"
+  },
+  {
+    "coaster": "Thunderbolt",
+    "park": "Six Flags New England",
+    "image_url": "https://rcdb.com/aaaalca",
+    "thumb_url": "https://rcdb.com/aaaalcb",
+    "source_url": "https://rcdb.com/182.htm"
+  },
+  {
+    "coaster": "Wicked Cyclone",
+    "park": "Six Flags New England",
+    "image_url": "https://rcdb.com/aaiyhua",
+    "thumb_url": "https://rcdb.com/aaiyhub",
+    "source_url": "https://rcdb.com/1981.htm"
+  },
+  {
+    "coaster": "The Riddler Revenge",
+    "park": "Six Flags New England",
+    "image_url": "https://rcdb.com/aafcqla",
+    "thumb_url": "https://rcdb.com/aafcqlb",
+    "source_url": "https://rcdb.com/429.htm"
+  },
+  {
+    "coaster": "Thunderhawk",
+    "park": "Dorney Park",
+    "image_url": "https://rcdb.com/aaiftta",
+    "thumb_url": "https://rcdb.com/aaifttb",
+    "source_url": "https://rcdb.com/239.htm"
+  },
+  {
+    "coaster": "Steel Force",
+    "park": "Dorney Park",
+    "image_url": "https://rcdb.com/aaiftna",
+    "thumb_url": "https://rcdb.com/aaiftnb",
+    "source_url": "https://rcdb.com/276.htm"
+  },
+  {
+    "coaster": "Wild Mouse",
+    "park": "Dorney Park",
+    "image_url": "",
+    "thumb_url": "",
+    "source_url": ""
+  },
+  {
+    "coaster": "Woodstock Express",
+    "park": "Dorney Park",
+    "image_url": "https://rcdb.com/aaabjaa",
+    "thumb_url": "https://rcdb.com/aaabjab",
+    "source_url": "https://rcdb.com/642.htm"
+  },
+  {
+    "coaster": "Talon",
+    "park": "Dorney Park",
+    "image_url": "https://rcdb.com/aaefsya",
+    "thumb_url": "https://rcdb.com/aaefsyb",
+    "source_url": "https://rcdb.com/735.htm"
+  },
+  {
+    "coaster": "Hydra the Revenge",
+    "park": "Dorney Park",
+    "image_url": "https://rcdb.com/aaefssa",
+    "thumb_url": "https://rcdb.com/aaefssb",
+    "source_url": "https://rcdb.com/2528.htm"
+  },
+  {
+    "coaster": "Possessed",
+    "park": "Dorney Park",
+    "image_url": "https://rcdb.com/aahonla",
+    "thumb_url": "https://rcdb.com/aahonlb",
+    "source_url": "https://rcdb.com/4039.htm"
+  },
+  {
+    "coaster": "Iron Menace",
+    "park": "Dorney Park",
+    "image_url": "https://rcdb.com/aaifbaa",
+    "thumb_url": "https://rcdb.com/aaifbab",
+    "source_url": "https://rcdb.com/21085.htm"
+  },
+  {
+    "coaster": "Phoenix",
+    "park": "Knoebels",
+    "image_url": "https://rcdb.com/aafnefa",
+    "thumb_url": "https://rcdb.com/aafnefb",
+    "source_url": "https://rcdb.com/143.htm"
+  },
+  {
+    "coaster": "Twister",
+    "park": "Knoebels",
+    "image_url": "https://rcdb.com/aagfsza",
+    "thumb_url": "https://rcdb.com/aagfszb",
+    "source_url": "https://rcdb.com/546.htm"
+  },
+  {
+    "coaster": "Flying Turns",
+    "park": "Knoebels",
+    "image_url": "https://rcdb.com/aafnbca",
+    "thumb_url": "https://rcdb.com/aafnbcb",
+    "source_url": "https://rcdb.com/3458.htm"
+  },
+  {
+    "coaster": "Kozmo's Kurves",
+    "park": "Knoebels",
+    "image_url": "",
+    "thumb_url": "",
+    "source_url": ""
+  },
+  {
+    "coaster": "Black Diamond",
+    "park": "Knoebels",
+    "image_url": "https://rcdb.com/aahqmoa",
+    "thumb_url": "https://rcdb.com/aahqmob",
+    "source_url": "https://rcdb.com/4454.htm"
+  },
+  {
+    "coaster": "Impulse",
+    "park": "Knoebels",
+    "image_url": "https://rcdb.com/aafnbwa",
+    "thumb_url": "https://rcdb.com/aafnbwb",
+    "source_url": "https://rcdb.com/12000.htm"
+  },
+  {
+    "coaster": "Lil' Phantom",
+    "park": "Kennywood",
+    "image_url": "",
+    "thumb_url": "",
+    "source_url": ""
+  },
+  {
+    "coaster": "Exterminator",
+    "park": "Kennywood",
+    "image_url": "https://rcdb.com/aaacqya",
+    "thumb_url": "https://rcdb.com/aaacqyb",
+    "source_url": "https://rcdb.com/538.htm"
+  },
+  {
+    "coaster": "Jack Rabbit",
+    "park": "Kennywood",
+    "image_url": "https://rcdb.com/aaajyva",
+    "thumb_url": "https://rcdb.com/aaajyvb",
+    "source_url": "https://rcdb.com/2426.htm"
+  },
+  {
+    "coaster": "Racer",
+    "park": "Kennywood",
+    "image_url": "",
+    "thumb_url": "",
+    "source_url": ""
+  },
+  {
+    "coaster": "Thunderbolt",
+    "park": "Kennywood",
+    "image_url": "https://rcdb.com/aaaaipa",
+    "thumb_url": "https://rcdb.com/aaaaipb",
+    "source_url": "https://rcdb.com/122.htm"
+  },
+  {
+    "coaster": "Phantom's Revenge",
+    "park": "Kennywood",
+    "image_url": "https://rcdb.com/aaaaiwa",
+    "thumb_url": "https://rcdb.com/aaaaiwb",
+    "source_url": "https://rcdb.com/123.htm"
+  },
+  {
+    "coaster": "Sky Rocket",
+    "park": "Kennywood",
+    "image_url": "https://rcdb.com/aabpzua",
+    "thumb_url": "https://rcdb.com/aabpzub",
+    "source_url": "https://rcdb.com/8612.htm"
+  },
+  {
+    "coaster": "Steel Curtain",
+    "park": "Kennywood",
+    "image_url": "https://rcdb.com/aafvxsa",
+    "thumb_url": "https://rcdb.com/aafvxsb",
+    "source_url": "https://rcdb.com/16479.htm"
+  },
+  {
+    "coaster": "Comet",
+    "park": "Hersheypark",
+    "image_url": "",
+    "thumb_url": "",
+    "source_url": ""
+  },
+  {
+    "coaster": "Trailblazer",
+    "park": "Hersheypark",
+    "image_url": "",
+    "thumb_url": "",
+    "source_url": ""
+  },
+  {
+    "coaster": "sooperdooperLooper",
+    "park": "Hersheypark",
+    "image_url": "https://rcdb.com/aaabjra",
+    "thumb_url": "https://rcdb.com/aaabjrb",
+    "source_url": "https://rcdb.com/108.htm"
+  },
+  {
+    "coaster": "Jolly Rancher Remix",
+    "park": "Hersheypark",
+    "image_url": "https://rcdb.com/aaigeoa",
+    "thumb_url": "https://rcdb.com/aaigeob",
+    "source_url": "https://rcdb.com/109.htm"
+  },
+  {
+    "coaster": "Great Bear",
+    "park": "Hersheypark",
+    "image_url": "https://rcdb.com/aaaheia",
+    "thumb_url": "https://rcdb.com/aaaheib",
+    "source_url": "https://rcdb.com/468.htm"
+  },
+  {
+    "coaster": "Wild Mouse",
+    "park": "Hersheypark",
+    "image_url": "",
+    "thumb_url": "",
+    "source_url": ""
+  },
+  {
+    "coaster": "Lightning Racer",
+    "park": "Hersheypark",
+    "image_url": "https://rcdb.com/aaabjja",
+    "thumb_url": "https://rcdb.com/aaabjjb",
+    "source_url": "https://rcdb.com/597.htm"
+  },
+  {
+    "coaster": "Storm Runner",
+    "park": "Hersheypark",
+    "image_url": "https://rcdb.com/aaaoeia",
+    "thumb_url": "https://rcdb.com/aaaoeib",
+    "source_url": "https://rcdb.com/2498.htm"
+  },
+  {
+    "coaster": "Fahrenheit",
+    "park": "Hersheypark",
+    "image_url": "https://rcdb.com/aaefwna",
+    "thumb_url": "https://rcdb.com/aaefwnb",
+    "source_url": "https://rcdb.com/4049.htm"
+  },
+  {
+    "coaster": "Skyrush",
+    "park": "Hersheypark",
+    "image_url": "https://rcdb.com/aaefxaa",
+    "thumb_url": "https://rcdb.com/aaefxab",
+    "source_url": "https://rcdb.com/10089.htm"
+  },
+  {
+    "coaster": "Cocoa Cruiser",
+    "park": "Hersheypark",
+    "image_url": "",
+    "thumb_url": "",
+    "source_url": ""
+  },
+  {
+    "coaster": "Laff Trakk",
+    "park": "Hersheypark",
+    "image_url": "",
+    "thumb_url": "",
+    "source_url": ""
+  },
+  {
+    "coaster": "Candymonium",
+    "park": "Hersheypark",
+    "image_url": "https://rcdb.com/aagyrda",
+    "thumb_url": "https://rcdb.com/aagyrdb",
+    "source_url": "https://rcdb.com/16682.htm"
+  },
+  {
+    "coaster": "Wildcat's Revenge",
+    "park": "Hersheypark",
+    "image_url": "https://rcdb.com/aahuzua",
+    "thumb_url": "https://rcdb.com/aahuzub",
+    "source_url": "https://rcdb.com/20462.htm"
+  },
+  {
+    "coaster": "AlpenFury",
+    "park": "Canada's Wonderland",
+    "image_url": "https://rcdb.com/aaioema",
+    "thumb_url": "https://rcdb.com/aaioemb",
+    "source_url": "https://rcdb.com/22016.htm"
+  },
+  {
+    "coaster": "Backlot Stunt Coaster",
+    "park": "Canada's Wonderland",
+    "image_url": "https://rcdb.com/aadejoa",
+    "thumb_url": "https://rcdb.com/aadejob",
+    "source_url": "https://rcdb.com/2861.htm"
+  },
+  {
+    "coaster": "Bat",
+    "park": "Canada's Wonderland",
+    "image_url": "https://rcdb.com/aadehia",
+    "thumb_url": "https://rcdb.com/aadehib",
+    "source_url": "https://rcdb.com/64.htm"
+  },
+  {
+    "coaster": "Behemoth",
+    "park": "Canada's Wonderland",
+    "image_url": "https://rcdb.com/aadehya",
+    "thumb_url": "https://rcdb.com/aadehyb",
+    "source_url": "https://rcdb.com/4005.htm"
+  },
+  {
+    "coaster": "Dragon Fyre",
+    "park": "Canada's Wonderland",
+    "image_url": "https://rcdb.com/aadeiva",
+    "thumb_url": "https://rcdb.com/aadeivb",
+    "source_url": "https://rcdb.com/58.htm"
+  },
+  {
+    "coaster": "Fly",
+    "park": "Canada's Wonderland",
+    "image_url": "https://rcdb.com/aadejca",
+    "thumb_url": "https://rcdb.com/aadejcb",
+    "source_url": "https://rcdb.com/540.htm"
+  },
+  {
+    "coaster": "Ghoster Coaster",
+    "park": "Canada's Wonderland",
+    "image_url": "https://rcdb.com/aaafgea",
+    "thumb_url": "https://rcdb.com/aaafgeb",
+    "source_url": "https://rcdb.com/61.htm"
+  },
+  {
+    "coaster": "Leviathan",
+    "park": "Canada's Wonderland",
+    "image_url": "https://rcdb.com/aachcda",
+    "thumb_url": "https://rcdb.com/aachcdb",
+    "source_url": "https://rcdb.com/10108.htm"
+  },
+  {
+    "coaster": "Mighty Canadian Minebuster",
+    "park": "Canada's Wonderland",
+    "image_url": "https://rcdb.com/aadejya",
+    "thumb_url": "https://rcdb.com/aadejyb",
+    "source_url": "https://rcdb.com/59.htm"
+  },
+  {
+    "coaster": "Silver Streak",
+    "park": "Canada's Wonderland",
+    "image_url": "https://rcdb.com/aadekra",
+    "thumb_url": "https://rcdb.com/aadekrb",
+    "source_url": "https://rcdb.com/734.htm"
+  },
+  {
+    "coaster": "Snoopy's Racing Railway",
+    "park": "Canada's Wonderland",
+    "image_url": "",
+    "thumb_url": "",
+    "source_url": ""
+  },
+  {
+    "coaster": "Taxi Jam",
+    "park": "Canada's Wonderland",
+    "image_url": "",
+    "thumb_url": "",
+    "source_url": ""
+  },
+  {
+    "coaster": "The DareDeviler",
+    "park": "Canada's Wonderland",
+    "image_url": "https://rcdb.com/aadeija",
+    "thumb_url": "https://rcdb.com/aadeijb",
+    "source_url": "https://rcdb.com/57.htm"
+  },
+  {
+    "coaster": "Thunder Run",
+    "park": "Canada's Wonderland",
+    "image_url": "https://rcdb.com/aadehza",
+    "thumb_url": "https://rcdb.com/aadehzb",
+    "source_url": "https://rcdb.com/63.htm"
+  },
+  {
+    "coaster": "Vortex",
+    "park": "Canada's Wonderland",
+    "image_url": "https://rcdb.com/aadeloa",
+    "thumb_url": "https://rcdb.com/aadelob",
+    "source_url": "https://rcdb.com/65.htm"
+  },
+  {
+    "coaster": "Wilde Beast",
+    "park": "Canada's Wonderland",
+    "image_url": "https://rcdb.com/aademba",
+    "thumb_url": "https://rcdb.com/aadembb",
+    "source_url": "https://rcdb.com/60.htm"
+  },
+  {
+    "coaster": "Wonder Mountain's Guardian",
+    "park": "Canada's Wonderland",
+    "image_url": "https://rcdb.com/aadbuga",
+    "thumb_url": "https://rcdb.com/aadbugb",
+    "source_url": "https://rcdb.com/12140.htm"
+  },
+  {
+    "coaster": "Yukon Striker",
+    "park": "Canada's Wonderland",
+    "image_url": "https://rcdb.com/aafsmia",
+    "thumb_url": "https://rcdb.com/aafsmib",
+    "source_url": "https://rcdb.com/16021.htm"
+  },
+  {
+    "coaster": "Quantum Accelerator",
+    "park": "Six Flags New England",
+    "image_url": "https://rcdb.com/aaiygta",
+    "thumb_url": "https://rcdb.com/aaiygtb",
+    "source_url": "https://rcdb.com/22026.htm"
+  }
+]
