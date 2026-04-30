@@ -4,6 +4,7 @@
     "park": "Cedar Point",
     "image_url": "https://rcdb.com/aafpqwa",
     "thumb_url": "https://rcdb.com/aafpqwb",
+    "local_image_path": "./coaster_images/c8b53dd27f81.jpg",
     "source_url": "https://rcdb.com/12.htm"
   },
   {
@@ -11,6 +12,7 @@
     "park": "Cedar Point",
     "image_url": "https://rcdb.com/aaivuva",
     "thumb_url": "https://rcdb.com/aaivuvb",
+    "local_image_path": "./coaster_images/4365f955bf14.jpg",
     "source_url": "https://rcdb.com/18.htm"
   },
   {
@@ -18,6 +20,7 @@
     "park": "Cedar Point",
     "image_url": "https://rcdb.com/aaaacca",
     "thumb_url": "https://rcdb.com/aaaaccb",
+    "local_image_path": "./coaster_images/90328fe2169e.jpg",
     "source_url": "https://rcdb.com/13.htm"
   },
   {
@@ -25,6 +28,7 @@
     "park": "Cedar Point",
     "image_url": "https://rcdb.com/aaaacda",
     "thumb_url": "https://rcdb.com/aaaacdb",
+    "local_image_path": "./coaster_images/11259e5909c9.jpg",
     "source_url": "https://rcdb.com/14.htm"
   },
   {
@@ -32,6 +36,7 @@
     "park": "Cedar Point",
     "image_url": "https://rcdb.com/aabhnpa",
     "thumb_url": "https://rcdb.com/aabhnpb",
+    "local_image_path": "./coaster_images/6e0c9480a73e.jpg",
     "source_url": "https://rcdb.com/17.htm"
   },
   {
@@ -39,6 +44,7 @@
     "park": "Cedar Point",
     "image_url": "https://rcdb.com/aaivwia",
     "thumb_url": "https://rcdb.com/aaivwib",
+    "local_image_path": "./coaster_images/c6635ea42d41.jpg",
     "source_url": "https://rcdb.com/11.htm"
   },
   {
@@ -46,6 +52,7 @@
     "park": "Cedar Point",
     "image_url": "https://rcdb.com/aaaaaba",
     "thumb_url": "https://rcdb.com/aaaaabb",
+    "local_image_path": "./coaster_images/2953d7e88ece.jpg",
     "source_url": "https://rcdb.com/1.htm"
   },
   {
@@ -53,6 +60,7 @@
     "park": "Cedar Point",
     "image_url": "https://rcdb.com/aaabcca",
     "thumb_url": "https://rcdb.com/aaabccb",
+    "local_image_path": "./coaster_images/db4a2a43c0ef.jpg",
     "source_url": "https://rcdb.com/594.htm"
   },
   {
@@ -60,6 +68,7 @@
     "park": "Cedar Point",
     "image_url": "https://rcdb.com/aabcyla",
     "thumb_url": "https://rcdb.com/aabcylb",
+    "local_image_path": "./coaster_images/92ea12f51316.jpg",
     "source_url": "https://rcdb.com/3570.htm"
   },
   {
@@ -67,6 +76,7 @@
     "park": "Cedar Point",
     "image_url": "https://rcdb.com/aaddxra",
     "thumb_url": "https://rcdb.com/aaddxrb",
+    "local_image_path": "./coaster_images/7c24012376e7.jpg",
     "source_url": "https://rcdb.com/10891.htm"
   },
   {
@@ -74,6 +84,7 @@
     "park": "Cedar Point",
     "image_url": "https://rcdb.com/aadzksa",
     "thumb_url": "https://rcdb.com/aadzksb",
+    "local_image_path": "./coaster_images/f159b4f48593.jpg",
     "source_url": "https://rcdb.com/13383.htm"
   },
   {
@@ -81,6 +92,7 @@
     "park": "Cedar Point",
     "image_url": "https://rcdb.com/aaeonra",
     "thumb_url": "https://rcdb.com/aaeonrb",
+    "local_image_path": "./coaster_images/23a161a3e803.jpg",
     "source_url": "https://rcdb.com/15411.htm"
   },
   {
@@ -88,6 +100,7 @@
     "park": "Cedar Point",
     "image_url": "",
     "thumb_url": "",
+    "local_image_path": "",
     "source_url": ""
   },
   {
@@ -95,6 +108,7 @@
     "park": "Cedar Point",
     "image_url": "https://rcdb.com/aaivxca",
     "thumb_url": "https://rcdb.com/aaivxcb",
+    "local_image_path": "./coaster_images/54aef19272fb.jpg",
     "source_url": "https://rcdb.com/1896.htm"
   },
   {
@@ -102,6 +116,7 @@
     "park": "Cedar Point",
     "image_url": "https://rcdb.com/aaabcma",
     "thumb_url": "https://rcdb.com/aaabcmb",
+    "local_image_path": "./coaster_images/8261963f9b53.jpg",
     "source_url": "https://rcdb.com/553.htm"
   },
   {
@@ -109,6 +124,7 @@
     "park": "Cedar Point",
     "image_url": "https://rcdb.com/aaczspa",
     "thumb_url": "https://rcdb.com/aaczspb",
+    "local_image_path": "./coaster_images/dcf985ec9897.jpg",
     "source_url": "https://rcdb.com/15.htm"
   },
   {
@@ -116,6 +132,7 @@
     "park": "Cedar Point",
     "image_url": "https://rcdb.com/aaivwpa",
     "thumb_url": "https://rcdb.com/aaivwpb",
+    "local_image_path": "./coaster_images/e7d72bbeeda8.jpg",
     "source_url": "https://rcdb.com/7.htm"
   },
   {
@@ -123,6 +140,7 @@
     "park": "Cedar Point",
     "image_url": "https://rcdb.com/aaivwqa",
     "thumb_url": "https://rcdb.com/aaivwqb",
+    "local_image_path": "./coaster_images/7fd25f59c69a.jpg",
     "source_url": "https://rcdb.com/22124.htm"
   },
   {
@@ -130,6 +148,7 @@
     "park": "Six Flags Great Adventure",
     "image_url": "https://rcdb.com/aahzcwa",
     "thumb_url": "https://rcdb.com/aahzcwb",
+    "local_image_path": "./coaster_images/5b9daf5ab28c.jpg",
     "source_url": "https://rcdb.com/32.htm"
   },
   {
@@ -137,6 +156,7 @@
     "park": "Six Flags Great Adventure",
     "image_url": "",
     "thumb_url": "",
+    "local_image_path": "",
     "source_url": ""
   },
   {
@@ -144,6 +164,7 @@
     "park": "Six Flags Great Adventure",
     "image_url": "https://rcdb.com/aaayvga",
     "thumb_url": "https://rcdb.com/aaayvgb",
+    "local_image_path": "./coaster_images/ce3c1b14136c.jpg",
     "source_url": "https://rcdb.com/3183.htm"
   },
   {
@@ -151,6 +172,7 @@
     "park": "Six Flags Great Adventure",
     "image_url": "https://rcdb.com/aahfvaa",
     "thumb_url": "https://rcdb.com/aahfvab",
+    "local_image_path": "./coaster_images/d4a157929493.jpg",
     "source_url": "https://rcdb.com/17658.htm"
   },
   {
@@ -158,6 +180,7 @@
     "park": "Six Flags Great Adventure",
     "image_url": "https://rcdb.com/aahozwa",
     "thumb_url": "https://rcdb.com/aahozwb",
+    "local_image_path": "./coaster_images/4bab6cff01b0.jpg",
     "source_url": "https://rcdb.com/13421.htm"
   },
   {
@@ -165,6 +188,7 @@
     "park": "Six Flags Great Adventure",
     "image_url": "https://rcdb.com/aahjmxa",
     "thumb_url": "https://rcdb.com/aahjmxb",
+    "local_image_path": "./coaster_images/fa168f81115c.jpg",
     "source_url": "https://rcdb.com/19460.htm"
   },
   {
@@ -172,6 +196,7 @@
     "park": "Six Flags Great Adventure",
     "image_url": "https://rcdb.com/aaiviaa",
     "thumb_url": "https://rcdb.com/aaiviab",
+    "local_image_path": "./coaster_images/1f7604a794a3.jpg",
     "source_url": "https://rcdb.com/502.htm"
   },
   {
@@ -179,6 +204,7 @@
     "park": "Six Flags Great Adventure",
     "image_url": "https://rcdb.com/aaalrma",
     "thumb_url": "https://rcdb.com/aaalrmb",
+    "local_image_path": "./coaster_images/d1468627358b.jpg",
     "source_url": "https://rcdb.com/1106.htm"
   },
   {
@@ -186,6 +212,7 @@
     "park": "Six Flags Great Adventure",
     "image_url": "https://rcdb.com/aaftyha",
     "thumb_url": "https://rcdb.com/aaftyhb",
+    "local_image_path": "./coaster_images/84c7b1808d9d.jpg",
     "source_url": "https://rcdb.com/131.htm"
   },
   {
@@ -193,6 +220,7 @@
     "park": "Six Flags Great Adventure",
     "image_url": "https://rcdb.com/aaabnpa",
     "thumb_url": "https://rcdb.com/aaabnpb",
+    "local_image_path": "./coaster_images/57adf049fdae.jpg",
     "source_url": "https://rcdb.com/35.htm"
   },
   {
@@ -200,6 +228,7 @@
     "park": "Six Flags Great Adventure",
     "image_url": "https://rcdb.com/aaifsca",
     "thumb_url": "https://rcdb.com/aaifscb",
+    "local_image_path": "./coaster_images/80d35d050517.jpg",
     "source_url": "https://rcdb.com/1976.htm"
   },
   {
@@ -207,6 +236,7 @@
     "park": "Six Flags Great Adventure",
     "image_url": "https://rcdb.com/aaivuea",
     "thumb_url": "https://rcdb.com/aaivueb",
+    "local_image_path": "./coaster_images/2f0a43601efc.jpg",
     "source_url": "https://rcdb.com/567.htm"
   },
   {
@@ -214,6 +244,7 @@
     "park": "Six Flags Great Adventure",
     "image_url": "",
     "thumb_url": "",
+    "local_image_path": "",
     "source_url": ""
   },
   {
@@ -221,6 +252,7 @@
     "park": "Six Flags New England",
     "image_url": "https://rcdb.com/aaawdea",
     "thumb_url": "https://rcdb.com/aaawdeb",
+    "local_image_path": "./coaster_images/caac07e19151.jpg",
     "source_url": "https://rcdb.com/1549.htm"
   },
   {
@@ -228,6 +260,7 @@
     "park": "Six Flags New England",
     "image_url": "https://rcdb.com/aagugha",
     "thumb_url": "https://rcdb.com/aagughb",
+    "local_image_path": "./coaster_images/a00696a22278.jpg",
     "source_url": "https://rcdb.com/630.htm"
   },
   {
@@ -235,6 +268,7 @@
     "park": "Six Flags New England",
     "image_url": "https://rcdb.com/aaajmha",
     "thumb_url": "https://rcdb.com/aaajmhb",
+    "local_image_path": "./coaster_images/c5a95a82c956.jpg",
     "source_url": "https://rcdb.com/629.htm"
   },
   {
@@ -242,6 +276,7 @@
     "park": "Six Flags New England",
     "image_url": "https://rcdb.com/aagjmba",
     "thumb_url": "https://rcdb.com/aagjmbb",
+    "local_image_path": "./coaster_images/9fdf1ab1edbe.jpg",
     "source_url": "https://rcdb.com/9431.htm"
   },
   {
@@ -249,6 +284,7 @@
     "park": "Six Flags New England",
     "image_url": "",
     "thumb_url": "",
+    "local_image_path": "",
     "source_url": ""
   },
   {
@@ -256,6 +292,7 @@
     "park": "Six Flags New England",
     "image_url": "https://rcdb.com/aaaryda",
     "thumb_url": "https://rcdb.com/aaarydb",
+    "local_image_path": "./coaster_images/52b52eb63148.jpg",
     "source_url": "https://rcdb.com/3031.htm"
   },
   {
@@ -263,6 +300,7 @@
     "park": "Six Flags New England",
     "image_url": "https://rcdb.com/aahwjka",
     "thumb_url": "https://rcdb.com/aahwjkb",
+    "local_image_path": "./coaster_images/748d20d1188f.jpg",
     "source_url": "https://rcdb.com/628.htm"
   },
   {
@@ -270,6 +308,7 @@
     "park": "Six Flags New England",
     "image_url": "https://rcdb.com/aaekmya",
     "thumb_url": "https://rcdb.com/aaekmyb",
+    "local_image_path": "./coaster_images/5bce1fa2cab3.jpg",
     "source_url": "https://rcdb.com/14189.htm"
   },
   {
@@ -277,6 +316,7 @@
     "park": "Six Flags New England",
     "image_url": "https://rcdb.com/aaaalca",
     "thumb_url": "https://rcdb.com/aaaalcb",
+    "local_image_path": "./coaster_images/4891e49c73dd.jpg",
     "source_url": "https://rcdb.com/182.htm"
   },
   {
@@ -284,6 +324,7 @@
     "park": "Six Flags New England",
     "image_url": "https://rcdb.com/aaiyhua",
     "thumb_url": "https://rcdb.com/aaiyhub",
+    "local_image_path": "./coaster_images/7bdcad1e6c9e.jpg",
     "source_url": "https://rcdb.com/1981.htm"
   },
   {
@@ -291,13 +332,23 @@
     "park": "Six Flags New England",
     "image_url": "https://rcdb.com/aafcqla",
     "thumb_url": "https://rcdb.com/aafcqlb",
+    "local_image_path": "./coaster_images/e63166388256.jpg",
     "source_url": "https://rcdb.com/429.htm"
+  },
+  {
+    "coaster": "Quantum Accelerator",
+    "park": "Six Flags New England",
+    "image_url": "https://rcdb.com/aaiygta",
+    "thumb_url": "https://rcdb.com/aaiygtb",
+    "local_image_path": "./coaster_images/3fc0ba2bc1ce.jpg",
+    "source_url": "https://rcdb.com/22026.htm"
   },
   {
     "coaster": "Thunderhawk",
     "park": "Dorney Park",
     "image_url": "https://rcdb.com/aaiftta",
     "thumb_url": "https://rcdb.com/aaifttb",
+    "local_image_path": "./coaster_images/a76d3de75fc6.jpg",
     "source_url": "https://rcdb.com/239.htm"
   },
   {
@@ -305,6 +356,7 @@
     "park": "Dorney Park",
     "image_url": "https://rcdb.com/aaiftna",
     "thumb_url": "https://rcdb.com/aaiftnb",
+    "local_image_path": "./coaster_images/bc8af0363f5d.jpg",
     "source_url": "https://rcdb.com/276.htm"
   },
   {
@@ -312,6 +364,7 @@
     "park": "Dorney Park",
     "image_url": "",
     "thumb_url": "",
+    "local_image_path": "",
     "source_url": ""
   },
   {
@@ -319,6 +372,7 @@
     "park": "Dorney Park",
     "image_url": "https://rcdb.com/aaabjaa",
     "thumb_url": "https://rcdb.com/aaabjab",
+    "local_image_path": "./coaster_images/8ea471c6ec91.jpg",
     "source_url": "https://rcdb.com/642.htm"
   },
   {
@@ -326,6 +380,7 @@
     "park": "Dorney Park",
     "image_url": "https://rcdb.com/aaefsya",
     "thumb_url": "https://rcdb.com/aaefsyb",
+    "local_image_path": "./coaster_images/6a412e50cf20.jpg",
     "source_url": "https://rcdb.com/735.htm"
   },
   {
@@ -333,6 +388,7 @@
     "park": "Dorney Park",
     "image_url": "https://rcdb.com/aaefssa",
     "thumb_url": "https://rcdb.com/aaefssb",
+    "local_image_path": "./coaster_images/e953a7aa01c7.jpg",
     "source_url": "https://rcdb.com/2528.htm"
   },
   {
@@ -340,6 +396,7 @@
     "park": "Dorney Park",
     "image_url": "https://rcdb.com/aahonla",
     "thumb_url": "https://rcdb.com/aahonlb",
+    "local_image_path": "./coaster_images/d680ca2af9cd.jpg",
     "source_url": "https://rcdb.com/4039.htm"
   },
   {
@@ -347,6 +404,7 @@
     "park": "Dorney Park",
     "image_url": "https://rcdb.com/aaifbaa",
     "thumb_url": "https://rcdb.com/aaifbab",
+    "local_image_path": "./coaster_images/127fe2b67b18.jpg",
     "source_url": "https://rcdb.com/21085.htm"
   },
   {
@@ -354,6 +412,7 @@
     "park": "Knoebels",
     "image_url": "https://rcdb.com/aafnefa",
     "thumb_url": "https://rcdb.com/aafnefb",
+    "local_image_path": "./coaster_images/28602e2bf0e8.jpg",
     "source_url": "https://rcdb.com/143.htm"
   },
   {
@@ -361,6 +420,7 @@
     "park": "Knoebels",
     "image_url": "https://rcdb.com/aagfsza",
     "thumb_url": "https://rcdb.com/aagfszb",
+    "local_image_path": "./coaster_images/7718b7824720.jpg",
     "source_url": "https://rcdb.com/546.htm"
   },
   {
@@ -368,6 +428,7 @@
     "park": "Knoebels",
     "image_url": "https://rcdb.com/aafnbca",
     "thumb_url": "https://rcdb.com/aafnbcb",
+    "local_image_path": "./coaster_images/ffdad764afff.jpg",
     "source_url": "https://rcdb.com/3458.htm"
   },
   {
@@ -375,6 +436,7 @@
     "park": "Knoebels",
     "image_url": "",
     "thumb_url": "",
+    "local_image_path": "",
     "source_url": ""
   },
   {
@@ -382,6 +444,7 @@
     "park": "Knoebels",
     "image_url": "https://rcdb.com/aahqmoa",
     "thumb_url": "https://rcdb.com/aahqmob",
+    "local_image_path": "./coaster_images/b8a28f1321b8.jpg",
     "source_url": "https://rcdb.com/4454.htm"
   },
   {
@@ -389,6 +452,7 @@
     "park": "Knoebels",
     "image_url": "https://rcdb.com/aafnbwa",
     "thumb_url": "https://rcdb.com/aafnbwb",
+    "local_image_path": "./coaster_images/d07d9f777f37.jpg",
     "source_url": "https://rcdb.com/12000.htm"
   },
   {
@@ -396,6 +460,7 @@
     "park": "Kennywood",
     "image_url": "",
     "thumb_url": "",
+    "local_image_path": "",
     "source_url": ""
   },
   {
@@ -403,6 +468,7 @@
     "park": "Kennywood",
     "image_url": "https://rcdb.com/aaacqya",
     "thumb_url": "https://rcdb.com/aaacqyb",
+    "local_image_path": "./coaster_images/0b9ec34eb690.jpg",
     "source_url": "https://rcdb.com/538.htm"
   },
   {
@@ -410,6 +476,7 @@
     "park": "Kennywood",
     "image_url": "https://rcdb.com/aaajyva",
     "thumb_url": "https://rcdb.com/aaajyvb",
+    "local_image_path": "./coaster_images/c4ba8152d97f.jpg",
     "source_url": "https://rcdb.com/2426.htm"
   },
   {
@@ -417,6 +484,7 @@
     "park": "Kennywood",
     "image_url": "",
     "thumb_url": "",
+    "local_image_path": "",
     "source_url": ""
   },
   {
@@ -424,6 +492,7 @@
     "park": "Kennywood",
     "image_url": "https://rcdb.com/aaaaipa",
     "thumb_url": "https://rcdb.com/aaaaipb",
+    "local_image_path": "./coaster_images/9ddd9c460184.jpg",
     "source_url": "https://rcdb.com/122.htm"
   },
   {
@@ -431,6 +500,7 @@
     "park": "Kennywood",
     "image_url": "https://rcdb.com/aaaaiwa",
     "thumb_url": "https://rcdb.com/aaaaiwb",
+    "local_image_path": "./coaster_images/18b389280134.jpg",
     "source_url": "https://rcdb.com/123.htm"
   },
   {
@@ -438,6 +508,7 @@
     "park": "Kennywood",
     "image_url": "https://rcdb.com/aabpzua",
     "thumb_url": "https://rcdb.com/aabpzub",
+    "local_image_path": "./coaster_images/cdbbb3bf4857.jpg",
     "source_url": "https://rcdb.com/8612.htm"
   },
   {
@@ -445,6 +516,7 @@
     "park": "Kennywood",
     "image_url": "https://rcdb.com/aafvxsa",
     "thumb_url": "https://rcdb.com/aafvxsb",
+    "local_image_path": "./coaster_images/7ba8dee52b79.jpg",
     "source_url": "https://rcdb.com/16479.htm"
   },
   {
@@ -452,6 +524,7 @@
     "park": "Hersheypark",
     "image_url": "",
     "thumb_url": "",
+    "local_image_path": "",
     "source_url": ""
   },
   {
@@ -459,6 +532,7 @@
     "park": "Hersheypark",
     "image_url": "",
     "thumb_url": "",
+    "local_image_path": "",
     "source_url": ""
   },
   {
@@ -466,6 +540,7 @@
     "park": "Hersheypark",
     "image_url": "https://rcdb.com/aaabjra",
     "thumb_url": "https://rcdb.com/aaabjrb",
+    "local_image_path": "./coaster_images/59da15217a54.jpg",
     "source_url": "https://rcdb.com/108.htm"
   },
   {
@@ -473,6 +548,7 @@
     "park": "Hersheypark",
     "image_url": "https://rcdb.com/aaigeoa",
     "thumb_url": "https://rcdb.com/aaigeob",
+    "local_image_path": "./coaster_images/a659d92c4876.jpg",
     "source_url": "https://rcdb.com/109.htm"
   },
   {
@@ -480,6 +556,7 @@
     "park": "Hersheypark",
     "image_url": "https://rcdb.com/aaaheia",
     "thumb_url": "https://rcdb.com/aaaheib",
+    "local_image_path": "./coaster_images/918e6f212d2f.jpg",
     "source_url": "https://rcdb.com/468.htm"
   },
   {
@@ -487,6 +564,7 @@
     "park": "Hersheypark",
     "image_url": "",
     "thumb_url": "",
+    "local_image_path": "",
     "source_url": ""
   },
   {
@@ -494,6 +572,7 @@
     "park": "Hersheypark",
     "image_url": "https://rcdb.com/aaabjja",
     "thumb_url": "https://rcdb.com/aaabjjb",
+    "local_image_path": "./coaster_images/e9d2cf916457.jpg",
     "source_url": "https://rcdb.com/597.htm"
   },
   {
@@ -501,6 +580,7 @@
     "park": "Hersheypark",
     "image_url": "https://rcdb.com/aaaoeia",
     "thumb_url": "https://rcdb.com/aaaoeib",
+    "local_image_path": "./coaster_images/200961d4891a.jpg",
     "source_url": "https://rcdb.com/2498.htm"
   },
   {
@@ -508,6 +588,7 @@
     "park": "Hersheypark",
     "image_url": "https://rcdb.com/aaefwna",
     "thumb_url": "https://rcdb.com/aaefwnb",
+    "local_image_path": "./coaster_images/79d31cbdd43f.jpg",
     "source_url": "https://rcdb.com/4049.htm"
   },
   {
@@ -515,6 +596,7 @@
     "park": "Hersheypark",
     "image_url": "https://rcdb.com/aaefxaa",
     "thumb_url": "https://rcdb.com/aaefxab",
+    "local_image_path": "./coaster_images/6568efec21de.jpg",
     "source_url": "https://rcdb.com/10089.htm"
   },
   {
@@ -522,6 +604,7 @@
     "park": "Hersheypark",
     "image_url": "",
     "thumb_url": "",
+    "local_image_path": "",
     "source_url": ""
   },
   {
@@ -529,6 +612,7 @@
     "park": "Hersheypark",
     "image_url": "",
     "thumb_url": "",
+    "local_image_path": "",
     "source_url": ""
   },
   {
@@ -536,6 +620,7 @@
     "park": "Hersheypark",
     "image_url": "https://rcdb.com/aagyrda",
     "thumb_url": "https://rcdb.com/aagyrdb",
+    "local_image_path": "./coaster_images/50180c483a57.jpg",
     "source_url": "https://rcdb.com/16682.htm"
   },
   {
@@ -543,6 +628,7 @@
     "park": "Hersheypark",
     "image_url": "https://rcdb.com/aahuzua",
     "thumb_url": "https://rcdb.com/aahuzub",
+    "local_image_path": "./coaster_images/82a3009eb6f8.jpg",
     "source_url": "https://rcdb.com/20462.htm"
   },
   {
@@ -550,6 +636,7 @@
     "park": "Canada's Wonderland",
     "image_url": "https://rcdb.com/aaioema",
     "thumb_url": "https://rcdb.com/aaioemb",
+    "local_image_path": "./coaster_images/5b50ae5476a1.jpg",
     "source_url": "https://rcdb.com/22016.htm"
   },
   {
@@ -557,6 +644,7 @@
     "park": "Canada's Wonderland",
     "image_url": "https://rcdb.com/aadejoa",
     "thumb_url": "https://rcdb.com/aadejob",
+    "local_image_path": "./coaster_images/28afd729a672.jpg",
     "source_url": "https://rcdb.com/2861.htm"
   },
   {
@@ -564,6 +652,7 @@
     "park": "Canada's Wonderland",
     "image_url": "https://rcdb.com/aadehia",
     "thumb_url": "https://rcdb.com/aadehib",
+    "local_image_path": "./coaster_images/cd27c444a828.jpg",
     "source_url": "https://rcdb.com/64.htm"
   },
   {
@@ -571,6 +660,7 @@
     "park": "Canada's Wonderland",
     "image_url": "https://rcdb.com/aadehya",
     "thumb_url": "https://rcdb.com/aadehyb",
+    "local_image_path": "./coaster_images/d573301415dc.jpg",
     "source_url": "https://rcdb.com/4005.htm"
   },
   {
@@ -578,6 +668,7 @@
     "park": "Canada's Wonderland",
     "image_url": "https://rcdb.com/aadeiva",
     "thumb_url": "https://rcdb.com/aadeivb",
+    "local_image_path": "./coaster_images/414c3db988cd.jpg",
     "source_url": "https://rcdb.com/58.htm"
   },
   {
@@ -585,6 +676,7 @@
     "park": "Canada's Wonderland",
     "image_url": "https://rcdb.com/aadejca",
     "thumb_url": "https://rcdb.com/aadejcb",
+    "local_image_path": "./coaster_images/955c41c6c274.jpg",
     "source_url": "https://rcdb.com/540.htm"
   },
   {
@@ -592,6 +684,7 @@
     "park": "Canada's Wonderland",
     "image_url": "https://rcdb.com/aaafgea",
     "thumb_url": "https://rcdb.com/aaafgeb",
+    "local_image_path": "./coaster_images/f51088faa051.jpg",
     "source_url": "https://rcdb.com/61.htm"
   },
   {
@@ -599,6 +692,7 @@
     "park": "Canada's Wonderland",
     "image_url": "https://rcdb.com/aachcda",
     "thumb_url": "https://rcdb.com/aachcdb",
+    "local_image_path": "./coaster_images/1fd960a7e62e.jpg",
     "source_url": "https://rcdb.com/10108.htm"
   },
   {
@@ -606,6 +700,7 @@
     "park": "Canada's Wonderland",
     "image_url": "https://rcdb.com/aadejya",
     "thumb_url": "https://rcdb.com/aadejyb",
+    "local_image_path": "./coaster_images/b277a800d068.jpg",
     "source_url": "https://rcdb.com/59.htm"
   },
   {
@@ -613,6 +708,7 @@
     "park": "Canada's Wonderland",
     "image_url": "https://rcdb.com/aadekra",
     "thumb_url": "https://rcdb.com/aadekrb",
+    "local_image_path": "./coaster_images/31e0585c8546.jpg",
     "source_url": "https://rcdb.com/734.htm"
   },
   {
@@ -620,6 +716,7 @@
     "park": "Canada's Wonderland",
     "image_url": "",
     "thumb_url": "",
+    "local_image_path": "",
     "source_url": ""
   },
   {
@@ -627,6 +724,7 @@
     "park": "Canada's Wonderland",
     "image_url": "",
     "thumb_url": "",
+    "local_image_path": "",
     "source_url": ""
   },
   {
@@ -634,6 +732,7 @@
     "park": "Canada's Wonderland",
     "image_url": "https://rcdb.com/aadeija",
     "thumb_url": "https://rcdb.com/aadeijb",
+    "local_image_path": "./coaster_images/cbe84f0d2a0f.jpg",
     "source_url": "https://rcdb.com/57.htm"
   },
   {
@@ -641,6 +740,7 @@
     "park": "Canada's Wonderland",
     "image_url": "https://rcdb.com/aadehza",
     "thumb_url": "https://rcdb.com/aadehzb",
+    "local_image_path": "./coaster_images/9f898eba3612.jpg",
     "source_url": "https://rcdb.com/63.htm"
   },
   {
@@ -648,6 +748,7 @@
     "park": "Canada's Wonderland",
     "image_url": "https://rcdb.com/aadeloa",
     "thumb_url": "https://rcdb.com/aadelob",
+    "local_image_path": "./coaster_images/d5863ed73059.jpg",
     "source_url": "https://rcdb.com/65.htm"
   },
   {
@@ -655,6 +756,7 @@
     "park": "Canada's Wonderland",
     "image_url": "https://rcdb.com/aademba",
     "thumb_url": "https://rcdb.com/aadembb",
+    "local_image_path": "./coaster_images/be050ccf6d9a.jpg",
     "source_url": "https://rcdb.com/60.htm"
   },
   {
@@ -662,6 +764,7 @@
     "park": "Canada's Wonderland",
     "image_url": "https://rcdb.com/aadbuga",
     "thumb_url": "https://rcdb.com/aadbugb",
+    "local_image_path": "./coaster_images/c1d75dbee4b5.jpg",
     "source_url": "https://rcdb.com/12140.htm"
   },
   {
@@ -669,13 +772,7 @@
     "park": "Canada's Wonderland",
     "image_url": "https://rcdb.com/aafsmia",
     "thumb_url": "https://rcdb.com/aafsmib",
+    "local_image_path": "./coaster_images/c1416c0e532a.jpg",
     "source_url": "https://rcdb.com/16021.htm"
-  },
-  {
-    "coaster": "Quantum Accelerator",
-    "park": "Six Flags New England",
-    "image_url": "https://rcdb.com/aaiygta",
-    "thumb_url": "https://rcdb.com/aaiygtb",
-    "source_url": "https://rcdb.com/22026.htm"
   }
 ]

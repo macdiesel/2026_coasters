@@ -39,6 +39,7 @@
     }
 
     .hero,
+    .leaderboard,
     .toolbar,
     .summary,
     .cards {
@@ -73,6 +74,7 @@
 
     .hero-actions,
     .toolbar-actions,
+    .leaderboard-grid,
     .person-grid,
     .filter-grid,
     .summary-grid,
@@ -122,14 +124,45 @@
     }
 
     .toolbar,
-    .summary {
+    .summary,
+    .leaderboard {
       padding: 18px;
       margin-bottom: 18px;
     }
 
-    .filter-grid {
+    .leaderboard h2 {
+      margin: 0 0 10px;
+      font-size: 1.2rem;
+    }
+
+    .leaderboard-grid {
       display: grid;
       grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 12px;
+    }
+
+    .leaderboard-card {
+      padding: 14px 16px;
+      border-radius: 18px;
+      border: 1px solid rgba(28, 26, 23, 0.08);
+      background: linear-gradient(180deg, rgba(255,255,255,0.88), rgba(255,250,242,0.95));
+    }
+
+    .leaderboard-card h3 {
+      margin: 0 0 6px;
+      font-size: 1rem;
+      line-height: 1.2;
+    }
+
+    .leaderboard-card p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .filter-grid {
+      display: grid;
+      grid-template-columns: repeat(6, minmax(0, 1fr));
       gap: 12px;
       margin-bottom: 12px;
     }
@@ -149,6 +182,20 @@
       width: 100%;
       padding: 11px 14px;
       min-height: 46px;
+    }
+
+    #personFilter[multiple] {
+      border-radius: 16px;
+      min-height: 132px;
+      padding: 8px;
+      line-height: 1.3;
+      background: #fff;
+    }
+
+    #personFilter[multiple] option {
+      border-radius: 10px;
+      padding: 6px 8px;
+      margin: 2px 0;
     }
 
     .summary-grid {
@@ -171,39 +218,67 @@
       margin-bottom: 6px;
     }
 
+    #loadedFileName {
+      font-size: 1rem;
+      line-height: 1.2;
+      overflow-wrap: anywhere;
+      word-break: break-word;
+    }
+
     .cards {
       padding: 18px;
     }
 
     .cards-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      grid-template-columns: repeat(3, minmax(0, 1fr));
       gap: 16px;
     }
 
     .card {
       display: grid;
-      grid-template-columns: 120px 1fr;
+      grid-template-columns: 160px 1fr;
       gap: 14px;
-      padding: 14px;
+      padding: 18px 14px 14px;
       background: var(--panel-strong);
       border: 1px solid rgba(28, 26, 23, 0.08);
       border-radius: 20px;
       box-shadow: 0 8px 24px rgba(26, 19, 12, 0.06);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .card::before {
+      content: "";
+      position: absolute;
+      inset: 0 auto 0 0;
+      width: 6px;
+      background: var(--type-color, rgba(28, 26, 23, 0.18));
+      border-radius: 20px 0 0 20px;
     }
 
     .photo {
-      width: 120px;
-      aspect-ratio: 4 / 3;
+      width: 160px;
+      aspect-ratio: 5 / 4;
       border-radius: 16px;
-      background: linear-gradient(135deg, rgba(21,111,106,0.18), rgba(214,103,45,0.22));
       border: 1px solid rgba(28, 26, 23, 0.08);
-      background-size: cover;
-      background-position: center;
       display: grid;
       place-items: end start;
       overflow: hidden;
       position: relative;
+    }
+
+    .photo.no-image {
+      background: linear-gradient(135deg, rgba(21,111,106,0.18), rgba(214,103,45,0.22));
+    }
+
+    .photo img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: 0;
     }
 
     .photo::after {
@@ -213,15 +288,89 @@
       background: linear-gradient(180deg, transparent 45%, rgba(0,0,0,0.48) 100%);
     }
 
-    .photo-tag {
-      position: relative;
-      z-index: 1;
-      margin: 10px;
-      padding: 4px 8px;
-      border-radius: 999px;
-      background: rgba(255,255,255,0.84);
-      font-size: 0.72rem;
-      font-weight: 700;
+    .park-crest {
+      position: absolute;
+      z-index: 2;
+      top: 12px;
+      right: 12px;
+      width: 58px;
+      height: 58px;
+      border-radius: 18px 18px 8px 18px;
+      display: grid;
+      place-items: center;
+      text-align: center;
+      padding: 6px;
+      font-size: 0.66rem;
+      font-weight: 800;
+      letter-spacing: 0.03em;
+      color: white;
+      border: 1px solid rgba(255, 255, 255, 0.55);
+      box-shadow: 0 6px 14px rgba(0, 0, 0, 0.28);
+      backdrop-filter: blur(2px);
+      text-transform: uppercase;
+    }
+
+    .park-crest-code {
+      display: block;
+      font-size: 0.92rem;
+      line-height: 1;
+      font-weight: 900;
+      margin-bottom: 2px;
+    }
+
+    .park-crest-name {
+      display: block;
+      font-size: 0.48rem;
+      line-height: 1.1;
+      opacity: 0.92;
+    }
+
+    .type-logo {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 4px 0;
+      color: var(--type-color, var(--ink));
+      width: fit-content;
+      font-size: 0.76rem;
+      font-weight: 800;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+    }
+
+    .type-logo-mark {
+      width: 34px;
+      height: 34px;
+      border-radius: 12px;
+      display: grid;
+      place-items: center;
+      background: var(--type-soft, rgba(28, 26, 23, 0.08));
+      color: var(--type-color, #444);
+      box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--type-color, #444) 18%, white 82%);
+    }
+
+    .type-logo-mark svg {
+      width: 24px;
+      height: 24px;
+      display: block;
+    }
+
+    .type-logo-text {
+      display: inline-flex;
+      flex-direction: column;
+      gap: 1px;
+    }
+
+    .type-logo-text strong {
+      font-size: 0.78rem;
+      line-height: 1;
+    }
+
+    .type-logo-text span {
+      font-size: 0.6rem;
+      line-height: 1;
+      letter-spacing: 0.06em;
+      opacity: 0.7;
     }
 
     .card h2 {
@@ -230,8 +379,66 @@
       line-height: 1.12;
     }
 
+    .card-body {
+      display: grid;
+      gap: 10px;
+      align-content: start;
+      min-width: 0;
+    }
+
+    .card-header {
+      display: grid;
+      gap: 4px;
+    }
+
+    .card-title {
+      overflow-wrap: anywhere;
+    }
+
+    .meta-strong {
+      margin: 0;
+      font-size: 0.97rem;
+      color: #4e4338;
+      font-weight: 600;
+      line-height: 1.25;
+    }
+
     .meta {
+      margin: 0;
       font-size: 0.92rem;
+      line-height: 1.28;
+    }
+
+    .card-stats {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 8px;
+    }
+
+    .stat-chip {
+      padding: 8px 10px;
+      border-radius: 14px;
+      background: white;
+      border: 1px solid rgba(28, 26, 23, 0.08);
+      min-width: 0;
+    }
+
+    .stat-chip span {
+      display: block;
+      font-size: 0.68rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: var(--muted);
+      margin-bottom: 3px;
+      font-weight: 700;
+    }
+
+    .stat-chip strong {
+      display: block;
+      font-size: 0.92rem;
+      line-height: 1.2;
+      color: var(--ink);
+      overflow-wrap: anywhere;
     }
 
     .person-grid {
@@ -288,8 +495,17 @@
 
     @media (max-width: 880px) {
       .filter-grid,
-      .summary-grid {
+      .summary-grid,
+      .leaderboard-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .cards-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .card-stats {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
       }
     }
 
@@ -301,8 +517,13 @@
 
       .filter-grid,
       .summary-grid,
+      .leaderboard-grid,
       .person-grid,
       .cards-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .card-stats {
         grid-template-columns: 1fr;
       }
 
@@ -328,6 +549,7 @@
       <div class="hero-actions">
         <button id="loadDefaultButton" class="primary">Load Workspace CSV</button>
         <button id="openButton" class="secondary">Open Another CSV</button>
+        <button id="openManifestButton" class="secondary">Open Manifest JSON</button>
         <button id="saveButton" class="primary" disabled>Save CSV</button>
         <button id="downloadButton" class="warn" disabled>Download Copy</button>
       </div>
@@ -335,6 +557,11 @@
       <p class="hint">
         Best experience: serve this folder over a local web server. If direct save is blocked, use Download Copy.
       </p>
+    </section>
+
+    <section class="leaderboard">
+      <h2>Leaderboard</h2>
+      <div id="leaderboardGrid" class="leaderboard-grid"></div>
     </section>
 
     <section class="toolbar">
@@ -348,21 +575,46 @@
           <select id="parkFilter"></select>
         </label>
         <label>
-          <span>Person</span>
-          <select id="personFilter"></select>
+          <span>Type</span>
+          <select id="typeFilter"></select>
+        </label>
+        <label>
+          <span>People (multi-select)</span>
+          <select id="personFilter" multiple size="4"></select>
         </label>
         <label>
           <span>Show</span>
           <select id="creditFilter">
             <option value="all">All coasters</option>
-            <option value="ridden">Only ridden by selected person</option>
-            <option value="not-ridden">Only not ridden by selected person</option>
+            <option value="ridden">Ridden by at least one selected person</option>
+            <option value="not-ridden">Not ridden by any selected person</option>
+          </select>
+        </label>
+        <label>
+          <span>Sort</span>
+          <select id="sortFilter">
+            <option value="name-asc">Name A-Z</option>
+            <option value="name-desc">Name Z-A</option>
+            <option value="year-desc">Year Newest</option>
+            <option value="year-asc">Year Oldest</option>
+            <option value="drop-desc">Drop Highest</option>
+            <option value="drop-asc">Drop Lowest</option>
+            <option value="speed-desc">Speed Fastest</option>
+            <option value="speed-asc">Speed Slowest</option>
+            <option value="height-desc">Height Tallest</option>
+            <option value="height-asc">Height Shortest</option>
+            <option value="length-desc">Track Longest</option>
+            <option value="length-asc">Track Shortest</option>
+            <option value="ride-desc">Ride Time Longest</option>
+            <option value="ride-asc">Ride Time Shortest</option>
+            <option value="manufacturer-asc">Manufacturer A-Z</option>
+            <option value="manufacturer-desc">Manufacturer Z-A</option>
+            <option value="park-asc">Park A-Z</option>
+            <option value="park-desc">Park Z-A</option>
           </select>
         </label>
       </div>
       <div class="toolbar-actions">
-        <button id="markVisibleButton" class="secondary" disabled>Mark Visible for Selected Person</button>
-        <button id="clearVisibleButton" class="secondary" disabled>Clear Visible for Selected Person</button>
         <button id="resetFiltersButton" class="secondary">Reset Filters</button>
       </div>
     </section>
@@ -372,7 +624,7 @@
         <div class="stat"><strong id="visibleCount">0</strong><span>Visible coasters</span></div>
         <div class="stat"><strong id="editedCount">0</strong><span>Unsaved changes</span></div>
         <div class="stat"><strong id="loadedFileName">None</strong><span>Loaded file</span></div>
-        <div class="stat"><strong id="selectedPerson">Kobra Kid</strong><span>Bulk edit person</span></div>
+        <div class="stat"><strong id="selectedPeople">All</strong><span>Filtered people</span></div>
       </div>
     </section>
 
@@ -386,6 +638,22 @@
     const FAMILY_COLUMNS = ['Kobra Kid', 'Melanie', 'DooDad', 'Mom'];
     const DEFAULT_CSV = './coasters_full_list_no_kings.csv';
     const MANIFEST_PATH = './coaster_photo_manifest.json';
+    const COASTER_TYPES = {
+      steel: { label: 'Steel', mark: 'ST', color: '#1f6fd6', soft: 'rgba(31, 111, 214, 0.12)', card: 'linear-gradient(135deg, rgba(31, 111, 214, 0.10), rgba(255, 255, 255, 0.92) 42%)' },
+      wood: { label: 'Wood', mark: 'WD', color: '#9a5c20', soft: 'rgba(154, 92, 32, 0.14)', card: 'linear-gradient(135deg, rgba(154, 92, 32, 0.12), rgba(255, 255, 255, 0.92) 42%)' },
+      launch: { label: 'Launch', mark: 'LN', color: '#0a9b76', soft: 'rgba(10, 155, 118, 0.14)', card: 'linear-gradient(135deg, rgba(10, 155, 118, 0.12), rgba(255, 255, 255, 0.92) 42%)' },
+      rmc: { label: 'RMC Hybrid', mark: 'RM', color: '#7a39c2', soft: 'rgba(122, 57, 194, 0.14)', card: 'linear-gradient(135deg, rgba(122, 57, 194, 0.12), rgba(255, 255, 255, 0.92) 42%)' },
+    };
+    const PARK_LOGOS = {
+      'Cedar Point': { text: 'CP', name: 'Cedar Point', color: 'linear-gradient(135deg, #1a90d8, #0b5f99)' },
+      'Six Flags Great Adventure': { text: 'GA', name: 'Great Adv', color: 'linear-gradient(135deg, #d73c50, #94152e)' },
+      'Six Flags New England': { text: 'NE', name: 'New Eng', color: 'linear-gradient(135deg, #e34c5f, #9b1630)' },
+      'Dorney Park': { text: 'DP', name: 'Dorney', color: 'linear-gradient(135deg, #2aa45d, #156b37)' },
+      'Knoebels': { text: 'KB', name: 'Knoebels', color: 'linear-gradient(135deg, #7d58df, #4f21a1)' },
+      'Kennywood': { text: 'KW', name: 'Kennywood', color: 'linear-gradient(135deg, #87644f, #5a3f31)' },
+      'Hersheypark': { text: 'HP', name: 'Hershey', color: 'linear-gradient(135deg, #9d6a3e, #6f431e)' },
+      "Canada's Wonderland": { text: 'CW', name: 'Wonderland', color: 'linear-gradient(135deg, #8b41d9, #58218f)' },
+    };
     const state = {
       rows: [],
       headers: [],
@@ -393,33 +661,40 @@
       photoByKey: new Map(),
       fileHandle: null,
       fileName: '',
-      selectedPerson: 'Kobra Kid',
+      selectedPeople: [...FAMILY_COLUMNS],
       manifestLoaded: false,
     };
 
     const ui = {
       loadDefaultButton: document.getElementById('loadDefaultButton'),
       openButton: document.getElementById('openButton'),
+      openManifestButton: document.getElementById('openManifestButton'),
       saveButton: document.getElementById('saveButton'),
       downloadButton: document.getElementById('downloadButton'),
-      markVisibleButton: document.getElementById('markVisibleButton'),
-      clearVisibleButton: document.getElementById('clearVisibleButton'),
       resetFiltersButton: document.getElementById('resetFiltersButton'),
       statusText: document.getElementById('statusText'),
       searchInput: document.getElementById('searchInput'),
       parkFilter: document.getElementById('parkFilter'),
+      typeFilter: document.getElementById('typeFilter'),
       personFilter: document.getElementById('personFilter'),
       creditFilter: document.getElementById('creditFilter'),
+      sortFilter: document.getElementById('sortFilter'),
+      leaderboardGrid: document.getElementById('leaderboardGrid'),
       visibleCount: document.getElementById('visibleCount'),
       editedCount: document.getElementById('editedCount'),
       loadedFileName: document.getElementById('loadedFileName'),
-      selectedPerson: document.getElementById('selectedPerson'),
+      selectedPeople: document.getElementById('selectedPeople'),
       cardsGrid: document.getElementById('cardsGrid'),
       emptyState: document.getElementById('emptyState'),
     };
 
     function rowKey(row) {
-      return `${row.park}|||${row.coaster}`;
+      const normalize = value => String(value ?? '')
+        .replace(/[\u2018\u2019]/g, "'")
+        .replace(/\s+/g, ' ')
+        .trim()
+        .toLowerCase();
+      return `${normalize(row.park)}|||${normalize(row.coaster)}`;
     }
 
     function escapeHtml(value) {
@@ -510,20 +785,91 @@
       ui.visibleCount.textContent = String(filteredRows.length);
       ui.editedCount.textContent = String(changed.length);
       ui.loadedFileName.textContent = state.fileName || 'None';
-      ui.selectedPerson.textContent = state.selectedPerson;
+      ui.selectedPeople.textContent = state.selectedPeople.length === FAMILY_COLUMNS.length
+        ? 'All'
+        : state.selectedPeople.join(', ');
       ui.saveButton.disabled = !state.rows.length;
       ui.downloadButton.disabled = !state.rows.length;
-      ui.markVisibleButton.disabled = !state.rows.length;
-      ui.clearVisibleButton.disabled = !state.rows.length;
+      updateLeaderboard();
+    }
+
+    function parseNumber(value) {
+      const num = Number.parseFloat(value);
+      return Number.isFinite(num) ? num : 0;
+    }
+
+    function sortRows(rows, sortValue) {
+      const [field, direction] = sortValue.split('-');
+      const factor = direction === 'desc' ? -1 : 1;
+      const sorted = [...rows];
+
+      const compareText = (a, b) => String(a ?? '').localeCompare(String(b ?? ''), undefined, { sensitivity: 'base' }) * factor;
+      const compareNumber = (a, b) => {
+        const aNum = parseNumber(a);
+        const bNum = parseNumber(b);
+        return (aNum - bNum) * factor;
+      };
+
+      sorted.sort((a, b) => {
+        switch (field) {
+          case 'name':
+            return compareText(a.coaster, b.coaster);
+          case 'year':
+            return compareNumber(a.year_built, b.year_built) || compareText(a.coaster, b.coaster);
+          case 'drop':
+            return compareNumber(a.drop_ft, b.drop_ft) || compareText(a.coaster, b.coaster);
+          case 'speed':
+            return compareNumber(a.max_speed_mph, b.max_speed_mph) || compareText(a.coaster, b.coaster);
+          case 'height':
+            return compareNumber(a.max_height_ft, b.max_height_ft) || compareText(a.coaster, b.coaster);
+          case 'length':
+            return compareNumber(a.track_length_ft, b.track_length_ft) || compareText(a.coaster, b.coaster);
+          case 'ride':
+            return compareNumber(a.ride_time_sec, b.ride_time_sec) || compareText(a.coaster, b.coaster);
+          case 'manufacturer':
+            return compareText(a.manufacturer, b.manufacturer) || compareText(a.coaster, b.coaster);
+          case 'park':
+            return compareText(a.park, b.park) || compareText(a.coaster, b.coaster);
+          default:
+            return compareText(a.coaster, b.coaster);
+        }
+      });
+
+      return sorted;
+    }
+
+    function updateLeaderboard() {
+      if (!state.rows.length) {
+        ui.leaderboardGrid.innerHTML = '';
+        return;
+      }
+
+      const people = FAMILY_COLUMNS.map(person => {
+        const riddenRows = state.rows.filter(row => isTrue(row[person]));
+        const coasterCount = riddenRows.length;
+        const dropTotal = riddenRows.reduce((acc, row) => acc + parseNumber(row.drop_ft), 0);
+        return { person, coasterCount, dropTotal };
+      }).sort((a, b) => (b.coasterCount - a.coasterCount) || (b.dropTotal - a.dropTotal));
+
+      ui.leaderboardGrid.innerHTML = people.map((entry, index) => `
+        <article class="leaderboard-card">
+          <h3>#${index + 1} ${escapeHtml(entry.person)}</h3>
+          <p>${entry.coasterCount} coasters ridden</p>
+          <p>${Math.round(entry.dropTotal).toLocaleString()} ft total drop</p>
+        </article>
+      `).join('');
     }
 
     function applyFilters() {
       const search = ui.searchInput.value.trim().toLowerCase();
       const park = ui.parkFilter.value;
-      const person = ui.personFilter.value;
+      const type = ui.typeFilter.value;
+      const selected = Array.from(ui.personFilter.selectedOptions).map(option => option.value);
+      const people = selected.length ? selected : [...FAMILY_COLUMNS];
       const creditMode = ui.creditFilter.value;
+      const sortValue = ui.sortFilter.value;
 
-      state.selectedPerson = person;
+      state.selectedPeople = people;
 
       const filteredRows = state.rows.filter(row => {
         const haystack = `${row.coaster} ${row.park} ${row.manufacturer}`.toLowerCase();
@@ -533,17 +879,28 @@
         if (park !== 'all' && row.park !== park) {
           return false;
         }
-        if (creditMode === 'ridden' && !isTrue(row[person])) {
+        if (type !== 'all' && String(row.coaster_type || '').trim().toLowerCase() !== type) {
           return false;
         }
-        if (creditMode === 'not-ridden' && isTrue(row[person])) {
-          return false;
+        if (creditMode === 'ridden') {
+          const anyRidden = people.some(person => isTrue(row[person]));
+          if (!anyRidden) {
+            return false;
+          }
+        }
+        if (creditMode === 'not-ridden') {
+          const anyRidden = people.some(person => isTrue(row[person]));
+          if (anyRidden) {
+            return false;
+          }
         }
         return true;
       });
 
-      renderCards(filteredRows);
-      updateSummary(filteredRows);
+      const sortedRows = sortRows(filteredRows, sortValue);
+
+      renderCards(sortedRows);
+      updateSummary(sortedRows);
     }
 
     function renderCards(rows) {
@@ -564,22 +921,72 @@
       }
     }
 
+    function getTypeTrackIcon(typeKey) {
+      const icons = {
+        steel: '<svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M3 16C6 16 6 7 12 7C18 7 18 18 21 18" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/><path d="M4 20V12M8 20V10M12 20V7M16 20V11M20 20V14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" opacity="0.65"/></svg>',
+        wood: '<svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M3 17L9 8L15 12L21 6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 20L9 8M8 20L11 10M12 20L15 12M16 20L20 8" stroke="currentColor" stroke-width="1.5" opacity="0.65"/></svg>',
+        launch: '<svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M3 15H18" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/><path d="M16 10L21 15L16 20" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/><path d="M5 11V19M9 11V19M13 11V19" stroke="currentColor" stroke-width="1.5" opacity="0.65"/></svg>',
+        rmc: '<svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 17C7 17 8 8 13 8C17 8 17 14 20 14" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/><rect x="6.8" y="12.2" width="2.6" height="7.2" rx="0.8" fill="currentColor" opacity="0.85"/><rect x="11" y="9.4" width="3.8" height="10" rx="0.8" fill="currentColor" opacity="0.65"/><rect x="16.2" y="11.6" width="2.6" height="7.8" rx="0.8" fill="currentColor" opacity="0.85"/></svg>',
+      };
+      return icons[typeKey] || '<svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 17C8 17 8 9 12 9C16 9 16 15 20 15" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>';
+    }
+
     function renderCard(row) {
       const photo = state.photoByKey.get(rowKey(row)) || {};
-      const imageUrl = photo.thumb_url || photo.image_url || '';
+      const imageUrl = photo.local_image_path || photo.thumb_url || photo.image_url || '';
+      const fallbackUrl = photo.image_url && photo.image_url !== imageUrl ? photo.image_url : '';
       const parkTag = escapeHtml(row.park || 'Unknown park');
-      const photoStyle = imageUrl ? ` style="background-image: url('${escapeHtml(imageUrl)}');"` : '';
+      const logo = PARK_LOGOS[row.park] || { text: 'PK', name: 'Park', color: 'linear-gradient(135deg, #64748b, #475569)' };
+      const coasterTypeKey = String(row.coaster_type || '').trim().toLowerCase();
+      const coasterType = COASTER_TYPES[coasterTypeKey] || {
+        label: row.coaster_type || 'Coaster',
+        mark: 'CT',
+        color: '#4c596f',
+        soft: 'rgba(76, 89, 111, 0.12)',
+        card: 'linear-gradient(135deg, rgba(76, 89, 111, 0.10), rgba(255, 255, 255, 0.92) 42%)',
+      };
+      const photoClass = imageUrl ? 'photo' : 'photo no-image';
+      const imageMarkup = imageUrl
+        ? `<img src="${escapeHtml(imageUrl)}" data-fallback="${escapeHtml(fallbackUrl)}" alt="${escapeHtml(row.coaster)}" loading="lazy" referrerpolicy="no-referrer" onerror="if(this.dataset.fallback){this.src=this.dataset.fallback;this.dataset.fallback='';}else{this.closest('.photo')?.classList.add('no-image');this.remove();}">`
+        : '';
       const creditCount = FAMILY_COLUMNS.filter(person => isTrue(row[person])).length;
+      const yearBuilt = row.year_built || 'Unknown';
+      const dropFt = row.drop_ft ? `${escapeHtml(row.drop_ft)} ft` : 'Unknown';
+      const speedMph = row.max_speed_mph ? `${escapeHtml(row.max_speed_mph)} mph` : 'Unknown';
 
       return `
-        <article class="card">
-          <div class="photo"${photoStyle}>
-            <span class="photo-tag">${parkTag}</span>
+        <article class="card" style="--type-color:${escapeHtml(coasterType.color)};--type-soft:${escapeHtml(coasterType.soft)};background:${escapeHtml(coasterType.card)};">
+          <div class="park-crest" style="background:${escapeHtml(logo.color)};" title="${parkTag}">
+            <span class="park-crest-code">${escapeHtml(logo.text)}</span>
+            <span class="park-crest-name">${escapeHtml(logo.name)}</span>
           </div>
-          <div>
-            <h2>${escapeHtml(row.coaster)}</h2>
-            <p class="meta">${escapeHtml(row.manufacturer || 'Unknown manufacturer')} · ${escapeHtml(row.park)} · ${escapeHtml(row.state || '')}</p>
-            <p class="meta">Year ${escapeHtml(row.year_built || 'Unknown')} · Drop ${escapeHtml(row.drop_ft || '—')} ft · Speed ${escapeHtml(row.max_speed_mph || '—')} mph</p>
+          <div class="${photoClass}">
+            ${imageMarkup}
+          </div>
+          <div class="card-body">
+            <div class="card-header">
+              <div class="type-logo">
+                <span class="type-logo-mark">${getTypeTrackIcon(coasterTypeKey)}</span>
+                <span class="type-logo-text"><strong>${escapeHtml(coasterType.label)}</strong><span>track type</span></span>
+              </div>
+              <h2 class="card-title">${escapeHtml(row.coaster)}</h2>
+              <p class="meta-strong">${escapeHtml(row.manufacturer || 'Unknown manufacturer')}</p>
+              <p class="meta">${escapeHtml(row.park)}${row.state ? ` · ${escapeHtml(row.state)}` : ''}</p>
+            </div>
+            <div class="card-stats">
+              <div class="stat-chip">
+                <span>Year</span>
+                <strong>${escapeHtml(yearBuilt)}</strong>
+              </div>
+              <div class="stat-chip">
+                <span>Drop</span>
+                <strong>${dropFt}</strong>
+              </div>
+              <div class="stat-chip">
+                <span>Speed</span>
+                <strong>${speedMph}</strong>
+              </div>
+            </div>
             <div class="badge">${creditCount} of ${FAMILY_COLUMNS.length} family credits checked</div>
             <div class="person-grid">
               ${FAMILY_COLUMNS.map(person => `
@@ -602,9 +1009,15 @@
 
     function populateFilters() {
       const parks = ['all', ...new Set(state.rows.map(row => row.park).filter(Boolean))];
+      const types = ['all', ...new Set(state.rows.map(row => String(row.coaster_type || '').trim().toLowerCase()).filter(Boolean))];
       ui.parkFilter.innerHTML = parks.map(park => `<option value="${escapeHtml(park)}">${park === 'all' ? 'All parks' : escapeHtml(park)}</option>`).join('');
-      ui.personFilter.innerHTML = FAMILY_COLUMNS.map(person => `<option value="${escapeHtml(person)}">${escapeHtml(person)}</option>`).join('');
-      ui.personFilter.value = state.selectedPerson;
+      ui.typeFilter.innerHTML = types.map(type => {
+        const label = type === 'all'
+          ? 'All types'
+          : (COASTER_TYPES[type]?.label || type.replace(/\b\w/g, char => char.toUpperCase()));
+        return `<option value="${escapeHtml(type)}">${escapeHtml(label)}</option>`;
+      }).join('');
+      ui.personFilter.innerHTML = FAMILY_COLUMNS.map(person => `<option value="${escapeHtml(person)}" selected>${escapeHtml(person)}</option>`).join('');
     }
 
     async function loadManifest() {
@@ -616,9 +1029,49 @@
         const manifest = await response.json();
         state.photoByKey = new Map(manifest.map(entry => [rowKey(entry), entry]));
         state.manifestLoaded = true;
+        return true;
       } catch {
         state.photoByKey = new Map();
         state.manifestLoaded = false;
+        return false;
+      }
+    }
+
+    async function openManifestFromDisk() {
+      try {
+        if ('showOpenFilePicker' in window) {
+          const [handle] = await window.showOpenFilePicker({
+            multiple: false,
+            types: [{ description: 'JSON files', accept: { 'application/json': ['.json'] } }],
+          });
+          const file = await handle.getFile();
+          const text = await file.text();
+          const manifest = JSON.parse(text);
+          state.photoByKey = new Map(manifest.map(entry => [rowKey(entry), entry]));
+          state.manifestLoaded = true;
+          applyFilters();
+          setStatus(`Loaded photo manifest from ${file.name}.`);
+          return;
+        }
+
+        const input = document.createElement('input');
+        input.type = 'file';
+        input.accept = '.json,application/json';
+        input.addEventListener('change', async () => {
+          const file = input.files?.[0];
+          if (!file) {
+            return;
+          }
+          const text = await file.text();
+          const manifest = JSON.parse(text);
+          state.photoByKey = new Map(manifest.map(entry => [rowKey(entry), entry]));
+          state.manifestLoaded = true;
+          applyFilters();
+          setStatus(`Loaded photo manifest from ${file.name}.`);
+        }, { once: true });
+        input.click();
+      } catch (error) {
+        setStatus(`Manifest open cancelled or failed. ${error.message}`);
       }
     }
 
@@ -638,13 +1091,16 @@
 
     async function loadDefaultCsv() {
       try {
-        await loadManifest();
+        const manifestLoaded = await loadManifest();
         const response = await fetch(DEFAULT_CSV, { cache: 'no-store' });
         if (!response.ok) {
           throw new Error(`CSV request failed: ${response.status}`);
         }
         const text = await response.text();
         loadParsedData(parseCsv(text), 'coasters_full_list_no_kings.csv');
+        if (!manifestLoaded) {
+          setStatus('CSV loaded. Photo manifest auto-load failed; click Open Manifest JSON to enable photos.');
+        }
       } catch (error) {
         setStatus(`Could not auto-load workspace CSV. Use Open Another CSV. ${error.message}`);
       }
@@ -652,7 +1108,9 @@
 
     async function openCsvFromDisk() {
       try {
-        await loadManifest();
+        if (!state.manifestLoaded) {
+          await loadManifest();
+        }
         if ('showOpenFilePicker' in window) {
           const [handle] = await window.showOpenFilePicker({
             multiple: false,
@@ -736,41 +1194,24 @@
       setStatus('Downloaded updated CSV copy.');
     }
 
-    function bulkSetVisible(value) {
-      const person = ui.personFilter.value;
-      const search = ui.searchInput.value.trim().toLowerCase();
-      const park = ui.parkFilter.value;
-
-      for (const row of state.rows) {
-        const haystack = `${row.coaster} ${row.park} ${row.manufacturer}`.toLowerCase();
-        if (search && !haystack.includes(search)) {
-          continue;
-        }
-        if (park !== 'all' && row.park !== park) {
-          continue;
-        }
-        row[person] = value ? 'True' : 'False';
-      }
-
-      applyFilters();
-      setStatus(`${value ? 'Marked' : 'Cleared'} visible coasters for ${person}.`);
-    }
-
     ui.loadDefaultButton.addEventListener('click', loadDefaultCsv);
     ui.openButton.addEventListener('click', openCsvFromDisk);
+    ui.openManifestButton.addEventListener('click', openManifestFromDisk);
     ui.saveButton.addEventListener('click', saveCsv);
     ui.downloadButton.addEventListener('click', downloadCsv);
-    ui.markVisibleButton.addEventListener('click', () => bulkSetVisible(true));
-    ui.clearVisibleButton.addEventListener('click', () => bulkSetVisible(false));
     ui.resetFiltersButton.addEventListener('click', () => {
       ui.searchInput.value = '';
       ui.parkFilter.value = 'all';
-      ui.personFilter.value = 'Kobra Kid';
+      ui.typeFilter.value = 'all';
+      Array.from(ui.personFilter.options).forEach(option => {
+        option.selected = true;
+      });
       ui.creditFilter.value = 'all';
+      ui.sortFilter.value = 'name-asc';
       applyFilters();
     });
 
-    for (const control of [ui.searchInput, ui.parkFilter, ui.personFilter, ui.creditFilter]) {
+    for (const control of [ui.searchInput, ui.parkFilter, ui.typeFilter, ui.personFilter, ui.creditFilter, ui.sortFilter]) {
       control.addEventListener('input', applyFilters);
       control.addEventListener('change', applyFilters);
     }

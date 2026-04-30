@@ -1,6 +1,7 @@
 import html
 import json
 import re
+import hashlib
 import urllib.request
 from pathlib import Path
 from urllib.parse import urljoin
@@ -10,6 +11,7 @@ import pandas as pd
 
 CSV_PATH = Path("coasters_full_list_no_kings.csv")
 OUTPUT_PATH = Path("coaster_photo_manifest.json")
+IMAGES_DIR = Path("coaster_images")
 HEADERS = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"}
 
 PIC_JSON_PATTERNS = [
@@ -26,6 +28,23 @@ def fetch_html(url: str) -> str:
     request = urllib.request.Request(url, headers=HEADERS)
     with urllib.request.urlopen(request, timeout=20) as response:
         return response.read().decode("utf-8", errors="replace")
+
+
+def download_image(url: str, destination: Path) -> bool:
+    if not url:
+        return False
+
+    try:
+        request = urllib.request.Request(url, headers=HEADERS)
+        with urllib.request.urlopen(request, timeout=20) as response:
+            content_type = (response.headers.get("Content-Type") or "").lower()
+            if "image" not in content_type:
+                return False
+            data = response.read()
+        destination.write_bytes(data)
+        return True
+    except Exception:
+        return False
 
 
 def extract_manifest_entry(page_url: str, page_html: str) -> dict[str, str]:
@@ -67,6 +86,7 @@ def extract_manifest_entry(page_url: str, page_html: str) -> dict[str, str]:
 
 def main() -> None:
     df = pd.read_csv(CSV_PATH)
+    IMAGES_DIR.mkdir(exist_ok=True)
     cache: dict[str, dict[str, str]] = {}
     rows: list[dict[str, str]] = []
 
@@ -79,6 +99,7 @@ def main() -> None:
             "park": row["park"],
             "image_url": "",
             "thumb_url": "",
+            "local_image_path": "",
             "source_url": source_url,
         }
 
@@ -90,6 +111,16 @@ def main() -> None:
                     cache[source_url] = {"image_url": "", "thumb_url": ""}
 
             manifest_row.update(cache[source_url])
+
+        # Save a local thumbnail copy to avoid cross-site hotlink rendering issues.
+        image_candidate = manifest_row["thumb_url"] or manifest_row["image_url"]
+        if image_candidate:
+            stable_id = hashlib.sha1(f"{manifest_row['park']}|{manifest_row['coaster']}".encode("utf-8")).hexdigest()[:12]
+            local_file = IMAGES_DIR / f"{stable_id}.jpg"
+            if not local_file.exists():
+                download_image(image_candidate, local_file)
+            if local_file.exists():
+                manifest_row["local_image_path"] = f"./{IMAGES_DIR.name}/{local_file.name}"
 
         rows.append(manifest_row)
 
